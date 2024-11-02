@@ -7,7 +7,7 @@ listener_01:
   force_default_server: true
   forward_ip: false
   forward_ip_header: X-Real-IP
-  redirect_legacy_clients_to: 'wss://attempt3.s221408.repl.co/old'
+  redirect_legacy_clients_to: 'wss://..repl.co/old'
   server_icon: server-icon.png
   server_motd:
   - 'EaglerSurival | Survival Server'

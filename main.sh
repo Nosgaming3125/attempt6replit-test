@@ -1,51 +1,45 @@
 #!/bin/bash
 
-
-echo ---------------
+echo "---------------"
 echo -e "\e[1;34mStarting EaglerCraft Server\e[0m"
-echo ---------------
+echo "---------------"
 unset DISPLAY
 
+# Enable mouse mode in tmux
 echo "set -g mouse on" > ~/.tmux.conf
 
-tmux kill-session -t server
+# Stop existing tmux session and caddy process
+tmux kill-session -t server 2>/dev/null
 caddy stop
 
+# Remove and copy files
 rm -f web/README.md
 cp README.md web/README.md
 
+# Only reset data if not running under specific REPL settings
 if [ -f "base.repl" ] && ! { [ "$REPL_OWNER" == "AndreGames5" ] && [ "$REPL_SLUG" == "eagler-craft" ]; }; then
-  rm base.repl
-  rm -rf server/world
-  rm -rf server/world_nether
-  rm -rf server/world_the_end
-  rm -rf server/logs
-  rm -rf server/plugins/bStats
-  rm -f server/usercache.json
-  rm -rf bungee/logs
-  rm -f bungee/eaglercraft_skins_cache.db
-  rm -f bungee/eaglercraft_auths.db
-  rm -f oldgee/proxy.log.0
-  rm -f oldgee/proxy.log.0.lck
+  rm -f base.repl
+  rm -rf server/world server/world_nether server/world_the_end server/logs server/plugins/bStats
+  rm -f server/usercache.json bungee/eaglercraft_skins_cache.db bungee/eaglercraft_auths.db
+  rm -f oldgee/proxy.log.0 oldgee/proxy.log.0.lck
   sed -i '/^stats: /d' bungee/config.yml
   sed -i "s/^stats: .*\$/stats: $(cat /proc/sys/kernel/random/uuid)/" oldgee/config.yml
   sed -i "s/^server_uuid: .*\$/server_uuid: $(cat /proc/sys/kernel/random/uuid)/" bungee/plugins/EaglercraftXBungee/settings.yml
 fi
 
+# Clean logs and cache if "base.repl" exists
 if [ -f "base.repl" ]; then
-  rm -rf server/logs
-  rm -f server/usercache.json
-  rm -rf bungee/logs
-  rm -f bungee/eaglercraft_skins_cache.db
-  rm -f bungee/eaglercraft_auths.db
-  rm -f oldgee/proxy.log.0
-  rm -f oldgee/proxy.log.0.lck
+  rm -rf server/logs bungee/logs
+  rm -f server/usercache.json bungee/eaglercraft_skins_cache.db bungee/eaglercraft_auths.db oldgee/proxy.log.0 oldgee/proxy.log.0.lck
 fi
 
+# Update redirect in listeners.yml
 sed -i "s/^  redirect_legacy_clients_to: .*\$/  redirect_legacy_clients_to: 'wss:\/\/$REPL_SLUG.$REPL_OWNER.repl.co\/old'/" bungee/plugins/EaglercraftXBungee/listeners.yml
 
+# Start caddy in the background
 caddy start --config ./Caddyfile > /dev/null 2>&1
 
+# Start tmux session for each server component
 cd server
 tmux new -d -s server "java -Djline.terminal=jline.UnsupportedTerminal -Xmx512M -jar server.jar nogui; tmux kill-session -t server"
 cd ..
@@ -58,9 +52,10 @@ cd bungee
 tmux splitw -t server -h "java -Xmx512M -Xms512M -jar bungee.jar; tmux kill-session -t server"
 cd ..
 
-while tmux has-session -t server
-do
-  tmux a -t server
+# Attach to tmux session
+while tmux has-session -t server; do
+  tmux attach -t server
 done
 
+# Stop caddy after tmux session ends
 caddy stop
