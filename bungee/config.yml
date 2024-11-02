@@ -30,14 +30,14 @@ log_pings: true
 connection_throttle_limit: 3
 server_connect_timeout: 5000
 timeout: 30000
+stats: 41ca6b84-59ec-4450-8698-f59af4344357
 player_limit: -1
-prevent_proxy_connections: false
 ip_forward: false
 groups: {}
 remote_ping_timeout: 5000
 connection_throttle: 0
 log_commands: false
-stats: 41ca6b84-59ec-4450-8698-f59af4344357
+prevent_proxy_connections: false
 online_mode: false
 forge_support: true
 disabled_commands: []
