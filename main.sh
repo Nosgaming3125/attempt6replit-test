@@ -50,26 +50,28 @@ fi
 echo "Updating listeners configuration..."
 sed -i "s/^  redirect_legacy_clients_to: .*\$/  redirect_legacy_clients_to: 'wss:\/\/$REPL_SLUG.$REPL_OWNER.repl.co\/old'/" bungee/plugins/EaglercraftXBungee/listeners.yml
 
-# Start caddy in the background
+# Start Caddy in the background
 echo "Starting Caddy server..."
 caddy start --config ./Caddyfile > caddy.log 2>&1
 if [ $? -ne 0 ]; then
   echo "Failed to start Caddy. Check caddy.log for details."
+  cat caddy.log  # Display the Caddy log
+  read -p "Press enter to exit..."  # Pause to allow the user to read the log
   exit 1
 fi
 
 # Start tmux session for each server component with logging
 echo "Starting server components in tmux..."
 cd server
-tmux new -d -s server "java -Djline.terminal=jline.UnsupportedTerminal -Xmx512M -jar server.jar nogui > ../server.log 2>&1; tmux kill-session -t server"
+tmux new -d -s server "java -Djline.terminal=jline.UnsupportedTerminal -Xmx512M -jar server.jar nogui > ../server.log 2>&1; read -p 'Press enter to exit...' "
 cd ..
 
 cd oldgee
-tmux splitw -t server -v "java -Xmx512M -Xms512M -jar bungee-dist.jar > ../oldgee.log 2>&1; tmux kill-session -t server"
+tmux splitw -t server -v "java -Xmx512M -Xms512M -jar bungee-dist.jar > ../oldgee.log 2>&1; read -p 'Press enter to exit...' "
 cd ..
 
 cd bungee
-tmux splitw -t server -h "java -Xmx512M -Xms512M -jar bungee.jar > ../bungee.log 2>&1; tmux kill-session -t server"
+tmux splitw -t server -h "java -Xmx512M -Xms512M -jar bungee.jar > ../bungee.log 2>&1; read -p 'Press enter to exit...' "
 cd ..
 
 # Attach to tmux session or wait if it can’t attach
@@ -78,6 +80,6 @@ while tmux has-session -t server 2>/dev/null; do
   tmux attach -t server || break
 done
 
-# Stop caddy after tmux session ends
+# Stop Caddy after tmux session ends
 echo "Stopping Caddy..."
 caddy stop

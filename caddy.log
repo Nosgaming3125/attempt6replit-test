@@ -1,16 +1,16 @@
-{"level":"info","ts":1730513315.5879273,"msg":"using config from file","file":"./Caddyfile"}
-{"level":"info","ts":1730513315.5890408,"msg":"adapted config to JSON","adapter":"caddyfile"}
-{"level":"warn","ts":1730513315.5890775,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"./Caddyfile","line":2}
-{"level":"info","ts":1730513315.5896847,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//127.0.0.1:2019","//localhost:2019","//[::1]:2019"]}
-{"level":"info","ts":1730513315.590224,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc0001d6000"}
-{"level":"info","ts":1730513315.5930955,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
-{"level":"info","ts":1730513315.5932834,"msg":"autosaved config (load with --resume flag)","file":"/home/codespace/.config/caddy/autosave.json"}
-{"level":"info","ts":1730513315.5933263,"msg":"serving initial configuration"}
-Successfully started Caddy (pid=33641) - Caddy is running in the background
-{"level":"info","ts":1730513315.6095352,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/home/codespace/.local/share/caddy","instance":"7a477397-09f0-4b53-9be9-7211c681a541","try_again":1730599715.609532,"try_again_in":86399.999999419}
-{"level":"info","ts":1730513315.6096694,"logger":"tls","msg":"finished cleaning storage units"}
-{"level":"info","ts":1730513319.9142563,"logger":"admin.api","msg":"received request","method":"POST","host":"localhost:2019","uri":"/stop","remote_ip":"127.0.0.1","remote_port":"55052","headers":{"Accept-Encoding":["gzip"],"Content-Length":["0"],"Origin":["http://localhost:2019"],"User-Agent":["Go-http-client/1.1"]}}
-{"level":"warn","ts":1730513319.9143035,"logger":"admin.api","msg":"exiting; byeee!! 👋"}
-{"level":"info","ts":1730513319.914316,"logger":"http","msg":"servers shutting down with eternal grace period"}
-{"level":"info","ts":1730513319.91454,"logger":"admin","msg":"stopped previous server","address":"localhost:2019"}
-{"level":"info","ts":1730513319.91457,"logger":"admin.api","msg":"shutdown complete","exit_code":0}
+{"level":"info","ts":1730516560.4781797,"msg":"using config from file","file":"./Caddyfile"}
+{"level":"info","ts":1730516560.479176,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"warn","ts":1730516560.4792275,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"./Caddyfile","line":2}
+{"level":"info","ts":1730516560.4797914,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+{"level":"info","ts":1730516560.4800084,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc0000b3d00"}
+{"level":"info","ts":1730516560.4815545,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1730516560.4817238,"msg":"autosaved config (load with --resume flag)","file":"/home/codespace/.config/caddy/autosave.json"}
+{"level":"info","ts":1730516560.4817507,"msg":"serving initial configuration"}
+Successfully started Caddy (pid=15088) - Caddy is running in the background
+{"level":"info","ts":1730516560.5175543,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/home/codespace/.local/share/caddy","instance":"05ec803e-15b7-4976-9c07-a515603a35bc","try_again":1730602960.5175514,"try_again_in":86399.999999419}
+{"level":"info","ts":1730516560.5179126,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1730516564.7802277,"logger":"admin.api","msg":"received request","method":"POST","host":"localhost:2019","uri":"/stop","remote_ip":"127.0.0.1","remote_port":"58052","headers":{"Accept-Encoding":["gzip"],"Content-Length":["0"],"Origin":["http://localhost:2019"],"User-Agent":["Go-http-client/1.1"]}}
+{"level":"warn","ts":1730516564.78029,"logger":"admin.api","msg":"exiting; byeee!! 👋"}
+{"level":"info","ts":1730516564.7803369,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1730516564.7806182,"logger":"admin","msg":"stopped previous server","address":"localhost:2019"}
+{"level":"info","ts":1730516564.780688,"logger":"admin.api","msg":"shutdown complete","exit_code":0}

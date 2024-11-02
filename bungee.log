@@ -1,43 +1,43 @@
 *** Hey! This build is potentially outdated :( ***
 *** Please check for a new build from https://papermc.io/downloads ***
 *** Should this build be outdated, you will get NO support for it. ***
-2024-11-02 02:08:36,849 main WARN Advanced terminal features are not available in this environment
-[02:08:37 INFO]: Using mbed TLS based native cipher.
-[02:08:37 INFO]: Using zlib based native compressor.
-[02:08:37 INFO]: Enabled Waterfall version git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513
-[02:08:37 INFO]: Not on Windows, attempting to use enhanced EpollEventLoop
-[02:08:37 INFO]: Epoll is working, utilising it!
-[02:08:37 INFO]: Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
-[02:08:37 INFO]: Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
-[02:08:37 INFO]: Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
-[02:08:37 INFO]: Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
-[02:08:37 INFO]: Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
-[02:08:37 INFO]: Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
-[02:08:37 INFO]: Loaded plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Loaded plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Loaded plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Loaded plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Loaded plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Loaded plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[02:08:37 WARN]: :>  
-[02:08:37 WARN]: :>      EAGLERCRAFTXBUNGEE WARNING:
-[02:08:37 WARN]: :>  
-[02:08:37 WARN]: :>  This plugin wasn't tested to be 'working'
-[02:08:37 WARN]: :>  with ANY version of BungeeCord (and forks)
-[02:08:37 WARN]: :>  apart from the versions listed below:
-[02:08:37 WARN]: :>  
-[02:08:37 WARN]: :>  - BungeeCord: 1.20-R0.3-SNAPSHOT:eda268b:1797
-[02:08:37 WARN]: :>  - Waterfall: 1.20-R0.2-SNAPSHOT:92b5149:562
-[02:08:37 WARN]: :>  - FlameCord: 1.1.1
-[02:08:37 WARN]: :>  
-[02:08:37 WARN]: :>  This is not a Bukkit/Spigot plugin!
-[02:08:37 WARN]: :>  
-[02:08:37 WARN]: :>  Use "-Deaglerxbungee.stfu=true" to hide
-[02:08:37 WARN]: :>  
-[02:08:37 WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[02:08:37 INFO]: Loaded plugin EaglercraftXBungee version 1.0.10 by lax1dude
-[02:08:37 WARN]: Could not load server icon
+2024-11-02 03:03:10,056 main WARN Advanced terminal features are not available in this environment
+[03:03:10 INFO]: Using mbed TLS based native cipher.
+[03:03:10 INFO]: Using zlib based native compressor.
+[03:03:10 INFO]: Enabled Waterfall version git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513
+[03:03:10 INFO]: Not on Windows, attempting to use enhanced EpollEventLoop
+[03:03:10 INFO]: Epoll is working, utilising it!
+[03:03:10 INFO]: Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+[03:03:10 INFO]: Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+[03:03:10 INFO]: Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+[03:03:10 INFO]: Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+[03:03:10 INFO]: Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+[03:03:10 INFO]: Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+[03:03:10 INFO]: Loaded plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:10 INFO]: Loaded plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:10 INFO]: Loaded plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:10 INFO]: Loaded plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:10 INFO]: Loaded plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:10 INFO]: Loaded plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:10 WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[03:03:10 WARN]: :>  
+[03:03:10 WARN]: :>      EAGLERCRAFTXBUNGEE WARNING:
+[03:03:10 WARN]: :>  
+[03:03:10 WARN]: :>  This plugin wasn't tested to be 'working'
+[03:03:10 WARN]: :>  with ANY version of BungeeCord (and forks)
+[03:03:10 WARN]: :>  apart from the versions listed below:
+[03:03:10 WARN]: :>  
+[03:03:10 WARN]: :>  - BungeeCord: 1.20-R0.3-SNAPSHOT:eda268b:1797
+[03:03:10 WARN]: :>  - Waterfall: 1.20-R0.2-SNAPSHOT:92b5149:562
+[03:03:10 WARN]: :>  - FlameCord: 1.1.1
+[03:03:10 WARN]: :>  
+[03:03:10 WARN]: :>  This is not a Bukkit/Spigot plugin!
+[03:03:10 WARN]: :>  
+[03:03:10 WARN]: :>  Use "-Deaglerxbungee.stfu=true" to hide
+[03:03:10 WARN]: :>  
+[03:03:10 WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[03:03:11 INFO]: Loaded plugin EaglercraftXBungee version 1.0.10 by lax1dude
+[03:03:11 WARN]: Could not load server icon
 java.lang.IllegalArgumentException: Server icon must be exactly 64x64 pixels
 	at net.md_5.bungee.api.Favicon.create(Favicon.java:65) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
 	at net.md_5.bungee.conf.Configuration.load(Configuration.java:89) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
@@ -45,22 +45,20 @@ java.lang.IllegalArgumentException: Server icon must be exactly 64x64 pixels
 	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:288) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
 	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:67) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
 	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
-[02:08:37 INFO]: Enabled plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Enabled plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Enabled plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Enabled plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Enabled plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 INFO]: Enabled plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[02:08:37 ERROR] [EaglercraftXBungee]: Online mode is set to false! Authentication system has been disabled
-[02:08:37 ERROR] [EaglercraftXBungee]: Eaglercraft could not bind port: /127.0.0.1:8081
-[02:08:37 ERROR] [EaglercraftXBungee]: Reason: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
-[02:08:38 INFO] [EaglercraftXBungee]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
-[02:08:38 INFO]: Enabled plugin EaglercraftXBungee version 1.0.10 by lax1dude
-[02:08:38 WARN]: Could not bind to host /127.0.0.1:25577
-io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
-[02:08:38 INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.b5049ee521872692a3d307ee115fd91cc8011c69.cert
-[02:08:38 INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.2c63d6a9be9d273db57d50cb026093cb97ea6e54.cert
-[02:08:39 ERROR] [TerminalConsole]: Failed to read console input
+[03:03:11 INFO]: Enabled plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:11 INFO]: Enabled plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:11 INFO]: Enabled plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:11 INFO]: Enabled plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:11 INFO]: Enabled plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:11 INFO]: Enabled plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[03:03:11 ERROR] [EaglercraftXBungee]: Online mode is set to false! Authentication system has been disabled
+[03:03:11 INFO] [EaglercraftXBungee]: Eaglercraft is listening on: /127.0.0.1:8081
+[03:03:11 INFO] [EaglercraftXBungee]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
+[03:03:11 INFO]: Enabled plugin EaglercraftXBungee version 1.0.10 by lax1dude
+[03:03:11 INFO]: Listening on /127.0.0.1:25577
+[03:03:11 INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.b5049ee521872692a3d307ee115fd91cc8011c69.cert
+[03:03:11 INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.2c63d6a9be9d273db57d50cb026093cb97ea6e54.cert
+[03:03:12 ERROR] [TerminalConsole]: Failed to read console input
 java.io.IOException: Input/output error
 	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
 	at java.io.FileInputStream.read(FileInputStream.java:287) ~[?:?]
