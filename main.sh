@@ -61,15 +61,15 @@ fi
 # Start tmux session for each server component with logging
 echo "Starting server components in tmux..."
 cd server
-tmux new -d -s server "java -Djline.terminal=jline.UnsupportedTerminal -Xmx512M -jar server.jar nogui > ../server.log 2>&1"
+tmux new -d -s server "java -Djline.terminal=jline.UnsupportedTerminal -Xmx512M -jar server.jar nogui > ../server.log 2>&1; tmux kill-session -t server"
 cd ..
 
 cd oldgee
-tmux splitw -t server -v "java -Xmx512M -Xms512M -jar bungee-dist.jar > ../oldgee.log 2>&1"
+tmux splitw -t server -v "java -Xmx512M -Xms512M -jar bungee-dist.jar > ../oldgee.log 2>&1; tmux kill-session -t server"
 cd ..
 
 cd bungee
-tmux splitw -t server -h "java -Xmx512M -Xms512M -jar bungee.jar > ../bungee.log 2>&1"
+tmux splitw -t server -h "java -Xmx512M -Xms512M -jar bungee.jar > ../bungee.log 2>&1; tmux kill-session -t server"
 cd ..
 
 # Attach to tmux session or wait if it can’t attach

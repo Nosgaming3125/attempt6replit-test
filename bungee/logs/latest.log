@@ -1,39 +1,39 @@
-[01:48:26] [main/INFO]: Using mbed TLS based native cipher.
-[01:48:26] [main/INFO]: Using zlib based native compressor.
-[01:48:26] [main/INFO]: Enabled Waterfall version git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513
-[01:48:26] [main/INFO]: Not on Windows, attempting to use enhanced EpollEventLoop
-[01:48:26] [main/INFO]: Epoll is working, utilising it!
-[01:48:26] [main/INFO]: Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
-[01:48:26] [main/INFO]: Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
-[01:48:26] [main/INFO]: Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
-[01:48:26] [main/INFO]: Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
-[01:48:26] [main/INFO]: Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
-[01:48:26] [main/INFO]: Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
-[01:48:26] [main/INFO]: Loaded plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:26] [main/INFO]: Loaded plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:26] [main/INFO]: Loaded plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:26] [main/INFO]: Loaded plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:26] [main/INFO]: Loaded plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:26] [main/INFO]: Loaded plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:26] [main/WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[01:48:26] [main/WARN]: :>  
-[01:48:26] [main/WARN]: :>      EAGLERCRAFTXBUNGEE WARNING:
-[01:48:26] [main/WARN]: :>  
-[01:48:26] [main/WARN]: :>  This plugin wasn't tested to be 'working'
-[01:48:26] [main/WARN]: :>  with ANY version of BungeeCord (and forks)
-[01:48:26] [main/WARN]: :>  apart from the versions listed below:
-[01:48:26] [main/WARN]: :>  
-[01:48:26] [main/WARN]: :>  - BungeeCord: 1.20-R0.3-SNAPSHOT:eda268b:1797
-[01:48:26] [main/WARN]: :>  - Waterfall: 1.20-R0.2-SNAPSHOT:92b5149:562
-[01:48:26] [main/WARN]: :>  - FlameCord: 1.1.1
-[01:48:26] [main/WARN]: :>  
-[01:48:26] [main/WARN]: :>  This is not a Bukkit/Spigot plugin!
-[01:48:26] [main/WARN]: :>  
-[01:48:26] [main/WARN]: :>  Use "-Deaglerxbungee.stfu=true" to hide
-[01:48:26] [main/WARN]: :>  
-[01:48:26] [main/WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
-[01:48:27] [main/INFO]: Loaded plugin EaglercraftXBungee version 1.0.10 by lax1dude
-[01:48:27] [main/WARN]: Could not load server icon
+[01:58:19] [main/INFO]: Using mbed TLS based native cipher.
+[01:58:19] [main/INFO]: Using zlib based native compressor.
+[01:58:19] [main/INFO]: Enabled Waterfall version git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513
+[01:58:19] [main/INFO]: Not on Windows, attempting to use enhanced EpollEventLoop
+[01:58:20] [main/INFO]: Epoll is working, utilising it!
+[01:58:20] [main/INFO]: Discovered module: ModuleSpec(name=cmd_alert, file=modules/cmd_alert.jar, provider=JenkinsModuleSource())
+[01:58:20] [main/INFO]: Discovered module: ModuleSpec(name=cmd_find, file=modules/cmd_find.jar, provider=JenkinsModuleSource())
+[01:58:20] [main/INFO]: Discovered module: ModuleSpec(name=cmd_list, file=modules/cmd_list.jar, provider=JenkinsModuleSource())
+[01:58:20] [main/INFO]: Discovered module: ModuleSpec(name=cmd_send, file=modules/cmd_send.jar, provider=JenkinsModuleSource())
+[01:58:20] [main/INFO]: Discovered module: ModuleSpec(name=cmd_server, file=modules/cmd_server.jar, provider=JenkinsModuleSource())
+[01:58:20] [main/INFO]: Discovered module: ModuleSpec(name=reconnect_yaml, file=modules/reconnect_yaml.jar, provider=JenkinsModuleSource())
+[01:58:20] [main/INFO]: Loaded plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Loaded plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Loaded plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Loaded plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Loaded plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Loaded plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[01:58:20] [main/WARN]: :>  
+[01:58:20] [main/WARN]: :>      EAGLERCRAFTXBUNGEE WARNING:
+[01:58:20] [main/WARN]: :>  
+[01:58:20] [main/WARN]: :>  This plugin wasn't tested to be 'working'
+[01:58:20] [main/WARN]: :>  with ANY version of BungeeCord (and forks)
+[01:58:20] [main/WARN]: :>  apart from the versions listed below:
+[01:58:20] [main/WARN]: :>  
+[01:58:20] [main/WARN]: :>  - BungeeCord: 1.20-R0.3-SNAPSHOT:eda268b:1797
+[01:58:20] [main/WARN]: :>  - Waterfall: 1.20-R0.2-SNAPSHOT:92b5149:562
+[01:58:20] [main/WARN]: :>  - FlameCord: 1.1.1
+[01:58:20] [main/WARN]: :>  
+[01:58:20] [main/WARN]: :>  This is not a Bukkit/Spigot plugin!
+[01:58:20] [main/WARN]: :>  
+[01:58:20] [main/WARN]: :>  Use "-Deaglerxbungee.stfu=true" to hide
+[01:58:20] [main/WARN]: :>  
+[01:58:20] [main/WARN]: :>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>:>
+[01:58:20] [main/INFO]: Loaded plugin EaglercraftXBungee version 1.0.10 by lax1dude
+[01:58:20] [main/WARN]: Could not load server icon
 java.lang.IllegalArgumentException: Server icon must be exactly 64x64 pixels
 	at net.md_5.bungee.api.Favicon.create(Favicon.java:65) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
 	at net.md_5.bungee.conf.Configuration.load(Configuration.java:89) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
@@ -41,38 +41,18 @@ java.lang.IllegalArgumentException: Server icon must be exactly 64x64 pixels
 	at net.md_5.bungee.BungeeCord.start(BungeeCord.java:288) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
 	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:67) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
 	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
-[01:48:27] [main/INFO]: Enabled plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:27] [main/INFO]: Enabled plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:27] [main/INFO]: Enabled plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:27] [main/INFO]: Enabled plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:27] [main/INFO]: Enabled plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:27] [main/INFO]: Enabled plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
-[01:48:27] [main/ERROR] [EaglercraftXBungee]: Online mode is set to false! Authentication system has been disabled
-[01:48:27] [Netty Worker IO Thread #0/ERROR] [EaglercraftXBungee]: Eaglercraft could not bind port: /127.0.0.1:8081
-[01:48:27] [Netty Worker IO Thread #0/ERROR] [EaglercraftXBungee]: Reason: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
-[01:48:27] [main/INFO] [EaglercraftXBungee]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
-[01:48:27] [main/INFO]: Enabled plugin EaglercraftXBungee version 1.0.10 by lax1dude
-[01:48:27] [Netty Boss IO Thread #0/WARN]: Could not bind to host /127.0.0.1:25577
+[01:58:20] [main/INFO]: Enabled plugin reconnect_yaml version git:reconnect_yaml:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Enabled plugin cmd_find version git:cmd_find:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Enabled plugin cmd_server version git:cmd_server:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Enabled plugin cmd_alert version git:cmd_alert:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Enabled plugin cmd_send version git:cmd_send:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/INFO]: Enabled plugin cmd_list version git:cmd_list:1.19-R0.1-SNAPSHOT:f6069e2:513 by WaterfallMC
+[01:58:20] [main/ERROR] [EaglercraftXBungee]: Online mode is set to false! Authentication system has been disabled
+[01:58:20] [Netty Worker IO Thread #0/ERROR] [EaglercraftXBungee]: Eaglercraft could not bind port: /127.0.0.1:8081
+[01:58:20] [Netty Worker IO Thread #0/ERROR] [EaglercraftXBungee]: Reason: io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
+[01:58:20] [main/INFO] [EaglercraftXBungee]: Connected to database: jdbc:sqlite:eaglercraft_skins_cache.db
+[01:58:20] [main/INFO]: Enabled plugin EaglercraftXBungee version 1.0.10 by lax1dude
+[01:58:20] [Netty Boss IO Thread #0/WARN]: Could not bind to host /127.0.0.1:25577
 io.netty.channel.unix.Errors$NativeIoException: bind(..) failed: Address already in use
-[01:48:28] [EaglerXBungee: Network Tick Tasks/INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.b5049ee521872692a3d307ee115fd91cc8011c69.cert
-[01:48:28] [EaglerXBungee: Network Tick Tasks/INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.2c63d6a9be9d273db57d50cb026093cb97ea6e54.cert
-[01:48:29] [main/ERROR] [TerminalConsole]: Failed to read console input
-java.io.IOException: Input/output error
-	at java.io.FileInputStream.readBytes(Native Method) ~[?:?]
-	at java.io.FileInputStream.read(FileInputStream.java:287) ~[?:?]
-	at java.io.BufferedInputStream.read1(BufferedInputStream.java:345) ~[?:?]
-	at java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[?:?]
-	at java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[?:?]
-	at sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[?:?]
-	at sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[?:?]
-	at sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[?:?]
-	at sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[?:?]
-	at java.io.InputStreamReader.read(InputStreamReader.java:188) ~[?:?]
-	at java.io.BufferedReader.fill(BufferedReader.java:160) ~[?:?]
-	at java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[?:?]
-	at java.io.BufferedReader.readLine(BufferedReader.java:347) ~[?:?]
-	at java.io.BufferedReader.readLine(BufferedReader.java:436) ~[?:?]
-	at net.minecrell.terminalconsole.SimpleTerminalConsole.readCommands(SimpleTerminalConsole.java:180) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
-	at net.minecrell.terminalconsole.SimpleTerminalConsole.start(SimpleTerminalConsole.java:143) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
-	at net.md_5.bungee.BungeeCordLauncher.main(BungeeCordLauncher.java:72) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
-	at net.md_5.bungee.Bootstrap.main(Bootstrap.java:15) ~[bungee.jar:git:Waterfall-Bootstrap:1.19-R0.1-SNAPSHOT:f6069e2:513]
+[01:58:21] [EaglerXBungee: Network Tick Tasks/INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.b5049ee521872692a3d307ee115fd91cc8011c69.cert
+[01:58:21] [EaglerXBungee: Network Tick Tasks/INFO] [EaglercraftXBungee]: Loaded certificate: /workspaces/attempt6replit-test/bungee/plugins/EaglercraftXBungee/eagcert/$dl.2c63d6a9be9d273db57d50cb026093cb97ea6e54.cert
