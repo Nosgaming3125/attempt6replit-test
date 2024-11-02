@@ -8,9 +8,13 @@ unset DISPLAY
 # Enable mouse mode in tmux
 echo "set -g mouse on" > ~/.tmux.conf
 
-# Stop existing tmux session and caddy process
+# Stop existing tmux session if any
 tmux kill-session -t server 2>/dev/null
-caddy stop
+
+# Check if Caddy is running before stopping it
+if pgrep -x "caddy" > /dev/null; then
+  caddy stop
+fi
 
 # Remove and copy files
 rm -f web/README.md
@@ -52,9 +56,9 @@ cd bungee
 tmux splitw -t server -h "java -Xmx512M -Xms512M -jar bungee.jar; tmux kill-session -t server"
 cd ..
 
-# Attach to tmux session
-while tmux has-session -t server; do
-  tmux attach -t server
+# Attach to tmux session or wait if it can’t attach
+while tmux has-session -t server 2>/dev/null; do
+  tmux attach -t server || break
 done
 
 # Stop caddy after tmux session ends
