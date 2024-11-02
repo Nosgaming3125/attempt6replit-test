@@ -2275,3 +2275,11 @@
 01:43:43 [INFO] Reload complete
 01:43:43 [INFO] Listening on /127.11.0.1:38411
 01:43:47 [SEVERE] Exception in thread "main" 
+01:45:08 [INFO] Enabled BungeeCord version unknown
+01:45:09 [INFO] Enabled plugin EaglerSkins version 1.0.0 by LAX1DUDE
+01:45:09 [INFO] Enabled plugin EaglerVoice version 1.0.0 by ayunami2000
+01:45:09 [INFO] Listening websockets on localhost/127.0.0.1:8082
+01:45:09 [INFO] Server bans.txt changed, it will be reloaded automatically
+01:45:09 [INFO] Reload complete
+01:45:09 [INFO] Listening on /127.11.0.1:36095
+01:45:12 [SEVERE] Exception in thread "main" 
