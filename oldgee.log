@@ -1,12 +1,12 @@
-Nov 02, 2024 3:03:08 AM io.netty.util.internal.PlatformDependent hasJavassist0
+Nov 02, 2024 3:24:21 AM io.netty.util.internal.PlatformDependent hasJavassist0
 INFO: You don't have Javassist in your class path or you don't have enough permission to load dynamically generated classes.  Please check the configuration for better performance.
-Nov 02, 2024 3:03:09 AM io.netty.util.internal.PlatformDependent <clinit>
+Nov 02, 2024 3:24:21 AM io.netty.util.internal.PlatformDependent <clinit>
 INFO: Your platform does not provide complete low-level API for accessing direct buffers reliably. Unless explicitly requested, heap buffer will always be preferred to avoid potential system unstability.
-03:03:09 [INFO] Enabled BungeeCord version unknown
-[m03:03:09 [INFO] Enabled plugin EaglerSkins version 1.0.0 by LAX1DUDE
-[m03:03:09 [INFO] Enabled plugin EaglerVoice version 1.0.0 by ayunami2000
-[m03:03:09 [INFO] Listening websockets on localhost/127.0.0.1:8082
-[m>03:03:09 [INFO] Server bans.txt changed, it will be reloaded automatically
-[m>03:03:09 [INFO] Listening on /127.11.0.1:46621
-[m>03:03:09 [INFO] Reload complete
+03:24:21 [INFO] Enabled BungeeCord version unknown
+[m03:24:21 [INFO] Enabled plugin EaglerSkins version 1.0.0 by LAX1DUDE
+[m03:24:21 [INFO] Enabled plugin EaglerVoice version 1.0.0 by ayunami2000
+[m03:24:21 [INFO] Listening websockets on localhost/127.0.0.1:8082
+[m03:24:21 [INFO] Listening on /127.11.0.1:43065
+[m03:24:21 [INFO] Server bans.txt changed, it will be reloaded automatically
+[m03:24:21 [INFO] Reload complete
 [m>
