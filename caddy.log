@@ -1,0 +1,16 @@
+{"level":"info","ts":1730512104.9070914,"msg":"using config from file","file":"./Caddyfile"}
+{"level":"info","ts":1730512104.9081671,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"warn","ts":1730512104.9082155,"msg":"Caddyfile input is not formatted; run 'caddy fmt --overwrite' to fix inconsistencies","adapter":"caddyfile","file":"./Caddyfile","line":2}
+{"level":"info","ts":1730512104.9087908,"logger":"admin","msg":"admin endpoint started","address":"localhost:2019","enforce_origin":false,"origins":["//localhost:2019","//[::1]:2019","//127.0.0.1:2019"]}
+{"level":"info","ts":1730512104.9090116,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0xc000315480"}
+{"level":"info","ts":1730512104.9111774,"logger":"http.log","msg":"server running","name":"srv0","protocols":["h1","h2","h3"]}
+{"level":"info","ts":1730512104.9114058,"msg":"autosaved config (load with --resume flag)","file":"/home/codespace/.config/caddy/autosave.json"}
+{"level":"info","ts":1730512104.9114876,"msg":"serving initial configuration"}
+Successfully started Caddy (pid=19201) - Caddy is running in the background
+{"level":"info","ts":1730512104.9254758,"logger":"tls","msg":"storage cleaning happened too recently; skipping for now","storage":"FileStorage:/home/codespace/.local/share/caddy","instance":"7a477397-09f0-4b53-9be9-7211c681a541","try_again":1730598504.9254727,"try_again_in":86399.999999339}
+{"level":"info","ts":1730512104.9256275,"logger":"tls","msg":"finished cleaning storage units"}
+{"level":"info","ts":1730512109.2933035,"logger":"admin.api","msg":"received request","method":"POST","host":"localhost:2019","uri":"/stop","remote_ip":"127.0.0.1","remote_port":"51774","headers":{"Accept-Encoding":["gzip"],"Content-Length":["0"],"Origin":["http://localhost:2019"],"User-Agent":["Go-http-client/1.1"]}}
+{"level":"warn","ts":1730512109.2933776,"logger":"admin.api","msg":"exiting; byeee!! 👋"}
+{"level":"info","ts":1730512109.2934456,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1730512109.2937481,"logger":"admin","msg":"stopped previous server","address":"localhost:2019"}
+{"level":"info","ts":1730512109.293808,"logger":"admin.api","msg":"shutdown complete","exit_code":0}
