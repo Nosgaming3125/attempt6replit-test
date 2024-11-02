@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "uuid": "f825090b-c588-3612-8016-210f383f64e1",
+    "name": "NOSgamingALT",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "3dcb8fa5-4edd-349a-9f2f-d3f964e89c2f",
+    "name": "DeevVool367",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
+    "uuid": "f74e33c5-bdeb-3118-b39a-4932519d45a5",
+    "name": "NOSgaming3125",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  }
+]

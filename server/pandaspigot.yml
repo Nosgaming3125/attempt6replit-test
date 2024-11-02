@@ -64,3 +64,7 @@ worlds:
       extraVertical: 0.085
     optimizeTntMovement: false
     optimizeLiquidExplosions: true
+    optimizeArmorStandMovement: false
+    # This option controls whether or not there is a chance for arrow crits to deal extra damage.
+    # By default, this is true (vanilla behaviour)
+    randomArrowDamage: true
