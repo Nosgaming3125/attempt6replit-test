@@ -1,0 +1,82 @@
+run = ["bash", "main.sh"]
+
+entrypoint = "main.sh"
+
+[nix]
+channel = "stable-22_11"
+
+[deployment]
+run = ["sh", "-c", "bash main.sh"]
+deploymentTarget = "cloudrun"
+
+[languages]
+
+[languages.bash]
+pattern = "**/{*.sh,*.bash}"
+
+[languages.bash.languageServer]
+start = "bash-language-server start"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
+
+[[ports]]
+localPort = 32949
+externalPort = 3001
+
+[[ports]]
+localPort = 34029
+externalPort = 8081
+
+[[ports]]
+localPort = 36385
+externalPort = 8099
+
+[[ports]]
+localPort = 37485
+externalPort = 5173
+
+[[ports]]
+localPort = 37783
+externalPort = 8080
+
+[[ports]]
+localPort = 38687
+externalPort = 3003
+
+[[ports]]
+localPort = 39013
+externalPort = 4200
+
+[[ports]]
+localPort = 39235
+externalPort = 8000
+
+[[ports]]
+localPort = 39441
+externalPort = 3002
+
+[[ports]]
+localPort = 40555
+externalPort = 6000
+
+[[ports]]
+localPort = 41807
+externalPort = 9000
+
+[[ports]]
+localPort = 42115
+externalPort = 6800
+
+[[ports]]
+localPort = 43839
+externalPort = 3000
+
+[[ports]]
+localPort = 45349
+externalPort = 8008
+
+[[ports]]
+localPort = 45653
+externalPort = 5000

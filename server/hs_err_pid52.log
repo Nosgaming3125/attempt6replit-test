@@ -1,0 +1,631 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGBUS (0x7) at pc=0x00007f9faae8ed4a, pid=52, tid=0x00007f9f87efe640
+#
+# JRE version: OpenJDK Runtime Environment (8.0_322) (build 1.8.0_322-ga)
+# Java VM: OpenJDK 64-Bit Server VM (25.322-bga mixed mode linux-amd64 compressed oops)
+# Problematic frame:
+# V  [libjvm.so+0x9dbd4a]  RuntimeService::record_safepoint_synchronized()+0x4a
+#
+# Core dump written. Default location: /home/runner/eagler-craft/server/core or core.52
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007f9fa411e800):  VMThread [stack: 0x00007f9f87dff000,0x00007f9f87eff000] [id=76]
+
+siginfo: si_signo: 7 (SIGBUS), si_code: 2 (BUS_ADRERR), si_addr: 0x00007f9faa12c5d0
+
+Registers:
+RAX=0x00007f9faa12c5d0, RBX=0x00007f9fa4015cf0, RCX=0x0000000000000000, RDX=0x0000000000000000
+RSP=0x00007f9f87efd510, RBP=0x00007f9f87efd520, RSI=0x0000000000000000, RDI=0x0000000000000000
+R8 =0x0000000cef6a2644, R9 =0x0000000000000000, R10=0x0000000000000000, R11=0x0000000000000000
+R12=0x0000000000000000, R13=0x0000000000000000, R14=0x00007f9fab23e9fc, R15=0x0000000000000000
+RIP=0x00007f9faae8ed4a, EFLAGS=0x0000000000010206, CSGSFS=0x002b000000000033, ERR=0x0000000000000007
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x00007f9f87efd510)
+0x00007f9f87efd510:   00007f9f851fdcd0 431bde82d7b634db
+0x00007f9f87efd520:   00007f9f87efd5f0 00007f9faae95df3
+0x00007f9f87efd530:   00007f9f87efd658 0000000000000000
+0x00007f9f87efd540:   00007f9fab03ee0d 00007f9fa4008b00
+0x00007f9f87efd550:   0000000000000000 0000000fa411f700
+0x00007f9f87efd560:   0000000000000000 00007f9f00000000
+0x00007f9f87efd570:   0000000000000004 00007f9f00000000
+0x00007f9f87efd580:   0000000000000000 00000000000003e8
+0x00007f9f87efd590:   0000000000000001 00007f9fa411e800
+0x00007f9f87efd5a0:   00007f9f87efd5f0 00007f9faadada8a
+0x00007f9f87efd5b0:   00007f9fa4008c00 00007f9fa411e800
+0x00007f9f87efd5c0:   00007f9fa4008c80 00007f9fab246af0
+0x00007f9f87efd5d0:   0000000000000000 00007f9f851fdcd0
+0x00007f9f87efd5e0:   00007f9fab2336a0 00007f9fab03ec28
+0x00007f9f87efd5f0:   00007f9f87efd8a0 00007f9faafaa12f
+0x00007f9f87efd600:   00007f9f87efd650 00007f9f87efd610
+0x00007f9f87efd610:   00007f9fa411e800 00007f9fa411ef80
+0x00007f9f87efd620:   00007f9fa411efc0 00007f9fa411efd0
+0x00007f9f87efd630:   00007f9fa411f0a8 00000000000000d8
+0x00007f9f87efd640:   00007f9fa411f1b0 00007f9f87efd828
+0x00007f9f87efd650:   00007f9f87efd658 6e69747563657845
+0x00007f9f87efd660:   65706f204d562067 203a6e6f69746172
+0x00007f9f87efd670:   6c656c6c61726150 64656c6961464347
+0x00007f9f87efd680:   697461636f6c6c41 00656e6f64006e6f
+0x00007f9f87efd690:   00007f9fa4110065 00007f9faadfd948
+0x00007f9f87efd6a0:   0000000000000000 0000000000000089
+0x00007f9f87efd6b0:   0000000000001000 00007f9f87eff000
+0x00007f9f87efd6c0:   0000000000100000 00007f9f00000014
+0x00007f9f87efd6d0:   0000000000000000 0000001400000000
+0x00007f9f87efd6e0:   0000000000000007 0000000000000140
+0x00007f9f87efd6f0:   0000000000000138 56997766f7a146db
+0x00007f9f87efd700:   00007f9f80000970 0000000000000160 
+
+Instructions: (pc=0x00007f9faae8ed4a)
+0x00007f9faae8ed2a:   84 00 00 00 00 00 48 8b 1d f9 c9 3b 00 48 8d 3d
+0x00007f9faae8ed3a:   fa c9 3b 00 e8 5d 5e 0c 00 49 89 c0 48 8b 43 28
+0x00007f9faae8ed4a:   4c 01 00 48 8d 05 8d fc 3a 00 80 38 00 74 c8 48
+0x00007f9faae8ed5a:   8d 3d d8 c9 3b 00 e8 ab 5d 0c 00 48 8b 5d f8 f2 
+
+Register to memory mapping:
+
+RAX=0x00007f9faa12c5d0 is an unknown value
+RBX=0x00007f9fa4015cf0 is an unknown value
+RCX=0x0000000000000000 is an unknown value
+RDX=0x0000000000000000 is an unknown value
+RSP=0x00007f9f87efd510 is an unknown value
+RBP=0x00007f9f87efd520 is an unknown value
+RSI=0x0000000000000000 is an unknown value
+RDI=0x0000000000000000 is an unknown value
+R8 =0x0000000cef6a2644 is an unknown value
+R9 =0x0000000000000000 is an unknown value
+R10=0x0000000000000000 is an unknown value
+R11=0x0000000000000000 is an unknown value
+R12=0x0000000000000000 is an unknown value
+R13=0x0000000000000000 is an unknown value
+R14=0x00007f9fab23e9fc: <offset 0xd8b9fc> in /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so at 0x00007f9faa4b3000
+R15=0x0000000000000000 is an unknown value
+
+
+Stack: [0x00007f9f87dff000,0x00007f9f87eff000],  sp=0x00007f9f87efd510,  free space=1017k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [libjvm.so+0x9dbd4a]  RuntimeService::record_safepoint_synchronized()+0x4a
+V  [libjvm.so+0x9e2df3]  SafepointSynchronize::begin()+0x453
+V  [libjvm.so+0xaf712f]  VMThread::loop()+0x4ef
+V  [libjvm.so+0xaf746a]  VMThread::run()+0xaa
+V  [libjvm.so+0x93f3c0]  java_start(Thread*)+0x150
+
+VM_Operation (0x00007f9f851fdcd0): ParallelGCFailedAllocation, mode: safepoint, requested by thread 0x00007f9fa4765000
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007f9f50a15800 JavaThread "File IO Thread" [_thread_blocked, id=155, stack(0x00007f9f84b00000,0x00007f9f84c00000)]
+  0x00007f9f50222800 JavaThread "Netty Epoll Server IO #0" daemon [_thread_in_native, id=154, stack(0x00007f9f86415000,0x00007f9f86515000)]
+  0x00007f9f500e4000 JavaThread "bStats-Metrics" [_thread_blocked, id=152, stack(0x00007f9f86d15000,0x00007f9f86e15000)]
+  0x00007f9f500d8000 JavaThread "PandaSpigot Watchdog Thread" [_thread_blocked, id=151, stack(0x00007f9f86e15000,0x00007f9f86f15000)]
+  0x00007f9f50001800 JavaThread "Server console handler" daemon [_thread_blocked, id=150, stack(0x00007f9f87315000,0x00007f9f87415000)]
+  0x00007f9fa400a000 JavaThread "DestroyJavaVM" [_thread_blocked, id=63, stack(0x00007f9faa183000,0x00007f9faa283000)]
+  0x00007f9fa4765000 JavaThread "Server thread" [_thread_blocked, id=149, stack(0x00007f9f85100000,0x00007f9f85200000)]
+  0x00007f9fa4763000 JavaThread "Server Infinisleeper" daemon [_thread_blocked, id=148, stack(0x00007f9f85c9b000,0x00007f9f85d9b000)]
+  0x00007f9fa46df000 JavaThread "Snooper Timer" daemon [_thread_blocked, id=147, stack(0x00007f9f8619b000,0x00007f9f8629b000)]
+  0x00007f9fa416a800 JavaThread "Service Thread" daemon [_thread_blocked, id=97, stack(0x00007f9f87516000,0x00007f9f87616000)]
+  0x00007f9fa4165800 JavaThread "C1 CompilerThread1" daemon [_thread_blocked, id=96, stack(0x00007f9f87617000,0x00007f9f87717000)]
+  0x00007f9fa4162800 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=93, stack(0x00007f9f87718000,0x00007f9f87818000)]
+  0x00007f9fa415d800 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=90, stack(0x00007f9f87818000,0x00007f9f87918000)]
+  0x00007f9fa412d000 JavaThread "Finalizer" daemon [_thread_blocked, id=82, stack(0x00007f9f87bfe000,0x00007f9f87cfe000)]
+  0x00007f9fa4128800 JavaThread "Reference Handler" daemon [_thread_blocked, id=80, stack(0x00007f9f87cfe000,0x00007f9f87dfe000)]
+
+Other Threads:
+=>0x00007f9fa411e800 VMThread [stack: 0x00007f9f87dff000,0x00007f9f87eff000] [id=76]
+  0x00007f9fa416d000 WatcherThread [stack: 0x00007f9f87416000,0x00007f9f87516000] [id=98]
+
+VM state:at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x00007f9fa4008b00] Safepoint_lock - owner thread: 0x00007f9fa411e800
+[0x00007f9fa4008b80] Threads_lock - owner thread: 0x00007f9fa411e800
+[0x00007f9fa4009080] Heap_lock - owner thread: 0x00007f9fa4765000
+
+heap address: 0x00000000e0000000, size: 512 MB, Compressed Oops mode: 32-bit
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 3
+Compressed class space size: 1073741824 Address: 0x0000000100000000
+
+Heap:
+ PSYoungGen      total 56320K, used 55632K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 100% used [0x00000000f5580000,0x00000000f8980000,0x00000000f8980000)
+  from space 3072K, 77% used [0x00000000f8980000,0x00000000f8bd4010,0x00000000f8c80000)
+  to   space 3072K, 0% used [0x00000000f8c80000,0x00000000f8c80000,0x00000000f8f80000)
+ ParOldGen       total 349696K, used 156349K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e98af520,0x00000000f5580000)
+ Metaspace       used 41554K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+
+Card table byte_map: [0x00007f9fa9c5c000,0x00007f9fa9d5d000] byte_map_base: 0x00007f9fa955c000
+
+Marking Bits: (ParMarkBitMap*) 0x00007f9fab24afc0
+ Begin Bits: [0x00007f9fa88ae000, 0x00007f9fa90ae000)
+ End Bits:   [0x00007f9fa90ae000, 0x00007f9fa98ae000)
+
+Polling page: 0x00007f9faa135000
+
+CodeCache: size=245760Kb used=14490Kb max_used=14678Kb free=231269Kb
+ bounds [0x00007f9f95000000, 0x00007f9f95e90000, 0x00007f9fa4000000]
+ total_blobs=5109 nmethods=4456 adapters=566
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 13883.753 Thread 0x00007f9fa4165800 nmethod 6413 0x00007f9f95cb10d0 code [0x00007f9f95cb12c0, 0x00007f9f95cb1a08]
+Event: 13883.846 Thread 0x00007f9fa4162800 nmethod 6408 0x00007f9f9591a6d0 code [0x00007f9f9591a880, 0x00007f9f9591b218]
+Event: 13883.846 Thread 0x00007f9fa4162800 6411       4       java.math.MutableBigInteger::normalize (91 bytes)
+Event: 13883.877 Thread 0x00007f9fa4165800 6414       3       com.sun.crypto.provider.GCTR::update (158 bytes)
+Event: 13883.878 Thread 0x00007f9fa4165800 nmethod 6414 0x00007f9f95995090 code [0x00007f9f95995280, 0x00007f9f95995ae8]
+Event: 13883.878 Thread 0x00007f9fa4165800 6416       1       sun.security.ssl.SSLSocketImpl::isClosed (5 bytes)
+Event: 13883.879 Thread 0x00007f9fa4165800 nmethod 6416 0x00007f9f95994d10 code [0x00007f9f95994e60, 0x00007f9f95994f70]
+Event: 13883.879 Thread 0x00007f9fa4162800 nmethod 6411 0x00007f9f95791210 code [0x00007f9f95791360, 0x00007f9f95791538]
+Event: 13883.880 Thread 0x00007f9fa4162800 6415 %     4       com.sun.crypto.provider.GHASH::blockMult @ 23 (245 bytes)
+Event: 13884.082 Thread 0x00007f9fa4162800 nmethod 6415% 0x00007f9f9588aa90 code [0x00007f9f9588abe0, 0x00007f9f9588b158]
+
+GC Heap History (10 events):
+Event: 13608.175 GC heap before
+{Heap before GC invocations=181 (full 2):
+ PSYoungGen      total 56320K, used 55584K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 100% used [0x00000000f5580000,0x00000000f8980000,0x00000000f8980000)
+  from space 3072K, 76% used [0x00000000f8c80000,0x00000000f8ec8000,0x00000000f8f80000)
+  to   space 3072K, 0% used [0x00000000f8980000,0x00000000f8980000,0x00000000f8c80000)
+ ParOldGen       total 349696K, used 156117K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e9875520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+Event: 13608.202 GC heap after
+Heap after GC invocations=181 (full 2):
+ PSYoungGen      total 56320K, used 2368K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 0% used [0x00000000f5580000,0x00000000f5580000,0x00000000f8980000)
+  from space 3072K, 77% used [0x00000000f8980000,0x00000000f8bd0000,0x00000000f8c80000)
+  to   space 3072K, 0% used [0x00000000f8c80000,0x00000000f8c80000,0x00000000f8f80000)
+ ParOldGen       total 349696K, used 156205K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e988b520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+}
+Event: 13676.531 GC heap before
+{Heap before GC invocations=182 (full 2):
+ PSYoungGen      total 56320K, used 55616K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 100% used [0x00000000f5580000,0x00000000f8980000,0x00000000f8980000)
+  from space 3072K, 77% used [0x00000000f8980000,0x00000000f8bd0000,0x00000000f8c80000)
+  to   space 3072K, 0% used [0x00000000f8c80000,0x00000000f8c80000,0x00000000f8f80000)
+ ParOldGen       total 349696K, used 156205K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e988b520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+Event: 13676.694 GC heap after
+Heap after GC invocations=182 (full 2):
+ PSYoungGen      total 56320K, used 1984K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 0% used [0x00000000f5580000,0x00000000f5580000,0x00000000f8980000)
+  from space 3072K, 64% used [0x00000000f8c80000,0x00000000f8e70000,0x00000000f8f80000)
+  to   space 3072K, 0% used [0x00000000f8980000,0x00000000f8980000,0x00000000f8c80000)
+ ParOldGen       total 349696K, used 156213K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e988d520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+}
+Event: 13752.025 GC heap before
+{Heap before GC invocations=183 (full 2):
+ PSYoungGen      total 56320K, used 55232K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 100% used [0x00000000f5580000,0x00000000f8980000,0x00000000f8980000)
+  from space 3072K, 64% used [0x00000000f8c80000,0x00000000f8e70000,0x00000000f8f80000)
+  to   space 3072K, 0% used [0x00000000f8980000,0x00000000f8980000,0x00000000f8c80000)
+ ParOldGen       total 349696K, used 156213K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e988d520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+Event: 13752.031 GC heap after
+Heap after GC invocations=183 (full 2):
+ PSYoungGen      total 56320K, used 2240K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 0% used [0x00000000f5580000,0x00000000f5580000,0x00000000f8980000)
+  from space 3072K, 72% used [0x00000000f8980000,0x00000000f8bb0000,0x00000000f8c80000)
+  to   space 3072K, 0% used [0x00000000f8c80000,0x00000000f8c80000,0x00000000f8f80000)
+ ParOldGen       total 349696K, used 156221K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e988f520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+}
+Event: 13819.076 GC heap before
+{Heap before GC invocations=184 (full 2):
+ PSYoungGen      total 56320K, used 55488K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 100% used [0x00000000f5580000,0x00000000f8980000,0x00000000f8980000)
+  from space 3072K, 72% used [0x00000000f8980000,0x00000000f8bb0000,0x00000000f8c80000)
+  to   space 3072K, 0% used [0x00000000f8c80000,0x00000000f8c80000,0x00000000f8f80000)
+ ParOldGen       total 349696K, used 156221K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e988f520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+Event: 13819.122 GC heap after
+Heap after GC invocations=184 (full 2):
+ PSYoungGen      total 56320K, used 2048K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 0% used [0x00000000f5580000,0x00000000f5580000,0x00000000f8980000)
+  from space 3072K, 66% used [0x00000000f8c80000,0x00000000f8e80000,0x00000000f8f80000)
+  to   space 3072K, 0% used [0x00000000f8980000,0x00000000f8980000,0x00000000f8c80000)
+ ParOldGen       total 349696K, used 156341K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e98ad520,0x00000000f5580000)
+ Metaspace       used 41549K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+}
+Event: 13887.676 GC heap before
+{Heap before GC invocations=185 (full 2):
+ PSYoungGen      total 56320K, used 55296K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 100% used [0x00000000f5580000,0x00000000f8980000,0x00000000f8980000)
+  from space 3072K, 66% used [0x00000000f8c80000,0x00000000f8e80000,0x00000000f8f80000)
+  to   space 3072K, 0% used [0x00000000f8980000,0x00000000f8980000,0x00000000f8c80000)
+ ParOldGen       total 349696K, used 156341K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e98ad520,0x00000000f5580000)
+ Metaspace       used 41554K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+Event: 13887.687 GC heap after
+Heap after GC invocations=185 (full 2):
+ PSYoungGen      total 56320K, used 2384K [0x00000000f5580000, 0x00000000f8f80000, 0x0000000100000000)
+  eden space 53248K, 0% used [0x00000000f5580000,0x00000000f5580000,0x00000000f8980000)
+  from space 3072K, 77% used [0x00000000f8980000,0x00000000f8bd4010,0x00000000f8c80000)
+  to   space 3072K, 0% used [0x00000000f8c80000,0x00000000f8c80000,0x00000000f8f80000)
+ ParOldGen       total 349696K, used 156349K [0x00000000e0000000, 0x00000000f5580000, 0x00000000f5580000)
+  object space 349696K, 44% used [0x00000000e0000000,0x00000000e98af520,0x00000000f5580000)
+ Metaspace       used 41554K, capacity 42924K, committed 43440K, reserved 1087488K
+  class space    used 5457K, capacity 5702K, committed 5808K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 5506.624 Thread 0x00007f9fa4765000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9f958e7ec0 method=net.minecraft.server.v1_8_R3.Entity.b(Lnet/minecraft/server/v1_8_R3/AxisAlignedBB;)Z @ 14
+Event: 5518.427 Thread 0x00007f9fa4765000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9f95c676e4 method=net.minecraft.server.v1_8_R3.ChunkCache.getType(Lnet/minecraft/server/v1_8_R3/BlockPosition;)Lnet/minecraft/server/v1_8_R3/IBlockData; @ 42
+Event: 5518.427 Thread 0x00007f9fa4765000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9f95cad58c method=net.minecraft.server.v1_8_R3.ChunkCache.getType(Lnet/minecraft/server/v1_8_R3/BlockPosition;)Lnet/minecraft/server/v1_8_R3/IBlockData; @ 42
+Event: 8049.474 Thread 0x00007f9fa4765000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9f95b27464 method=net.minecraft.server.v1_8_R3.EntityLiving.a(DZLnet/minecraft/server/v1_8_R3/Block;Lnet/minecraft/server/v1_8_R3/BlockPosition;)V @ 30
+Event: 8481.425 Thread 0x00007f9fa4765000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9f952f3d74 method=net.minecraft.server.v1_8_R3.EntityItem.a(Lnet/minecraft/server/v1_8_R3/EntityItem;)Z @ 2
+Event: 8481.436 Thread 0x00007f9fa4765000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9f95c83868 method=net.minecraft.server.v1_8_R3.World.tickEntities()V @ 510
+Event: 9798.328 Thread 0x00007f9fa4765000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9f957ea5a8 method=net.minecraft.server.v1_8_R3.BlockStateList$BlockData.get(Lnet/minecraft/server/v1_8_R3/IBlockState;)Ljava/lang/Comparable; @ 5
+Event: 9798.328 Thread 0x00007f9fa4765000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9f957ea5a8 method=net.minecraft.server.v1_8_R3.BlockStateList$BlockData.get(Lnet/minecraft/server/v1_8_R3/IBlockState;)Ljava/lang/Comparable; @ 5
+Event: 9798.328 Thread 0x00007f9fa4765000 Uncommon trap: reason=class_check action=maybe_recompile pc=0x00007f9f957ea5a8 method=net.minecraft.server.v1_8_R3.BlockStateList$BlockData.get(Lnet/minecraft/server/v1_8_R3/IBlockState;)Ljava/lang/Comparable; @ 5
+Event: 9932.125 Thread 0x00007f9fa4765000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x00007f9f95777dc0 method=java.util.Random.nextInt(I)I @ 58
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (10 events):
+Event: 6782.495 Thread 0x00007f9fa412d000 Exception <a 'java/net/SocketException': Socket closed> (0x00000000f5686b90) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 738]
+Event: 7272.902 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f5dc7e80) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 8172.878 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f70cc078) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 8538.485 Thread 0x00007f9fa412d000 Exception <a 'java/net/SocketException': Socket closed> (0x00000000f5683970) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 738]
+Event: 9072.944 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f59b3718) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 9972.896 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f75f2b90) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 10872.886 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f8658f08) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 11772.885 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f676dc68) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 12672.880 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f8167c60) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+Event: 13572.887 Thread 0x00007f9fa46df000 Exception <a 'java/net/UnknownHostException'> (0x00000000f70d0568) thrown at [/build/source/hotspot/src/share/vm/prims/jni.cpp, line 711]
+
+Events (10 events):
+Event: 13883.427 Thread 0x00007f9fa4165800 flushing nmethod 0x00007f9f95b0f290
+Event: 13883.438 Thread 0x00007f9fa4165800 flushing nmethod 0x00007f9f95c57c10
+Event: 13883.445 Thread 0x00007f9fa4165800 flushing nmethod 0x00007f9f95cd0410
+Event: 13883.687 Thread 0x00007f9f4c088800 Thread added: 0x00007f9f4c088800
+Event: 13883.688 Executing VM operation: RevokeBias
+Event: 13883.719 Executing VM operation: RevokeBias done
+Event: 13883.719 Thread 0x00007f9f4c088800 Thread exited: 0x00007f9f4c088800
+Event: 13887.675 Executing VM operation: ParallelGCFailedAllocation
+Event: 13887.687 Executing VM operation: ParallelGCFailedAllocation done
+Event: 13965.828 Executing VM operation: ParallelGCFailedAllocation
+
+
+Dynamic libraries:
+e0000000-ecf80000 rw-p 00000000 00:00 0 
+ecf80000-f8f80000 rw-p 00000000 00:00 0 
+f8f80000-100000000 ---p 00000000 00:00 0 
+100000000-1005ac000 rw-p 00000000 00:00 0 
+1005ac000-140000000 ---p 00000000 00:00 0 
+5645627b2000-5645627b3000 r--p 00000000 00:388 679348268                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/bin/java
+5645627b3000-5645627b4000 r-xp 00001000 00:388 679348268                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/bin/java
+5645627b4000-5645627b5000 r--p 00002000 00:388 679348268                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/bin/java
+5645627b5000-5645627b6000 r--p 00002000 00:388 679348268                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/bin/java
+5645627b6000-5645627b7000 rw-p 00003000 00:388 679348268                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/bin/java
+5645627b7000-5645627b8000 rw-p 00004000 00:388 679348268                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/bin/java
+5645633fc000-56456345f000 rw-p 00000000 00:00 0                          [heap]
+7f9f40000000-7f9f40021000 rw-p 00000000 00:00 0 
+7f9f40021000-7f9f44000000 ---p 00000000 00:00 0 
+7f9f44000000-7f9f442d1000 rw-p 00000000 00:00 0 
+7f9f442d1000-7f9f48000000 ---p 00000000 00:00 0 
+7f9f48000000-7f9f48021000 rw-p 00000000 00:00 0 
+7f9f48021000-7f9f4c000000 ---p 00000000 00:00 0 
+7f9f4c000000-7f9f4c137000 rw-p 00000000 00:00 0 
+7f9f4c137000-7f9f50000000 ---p 00000000 00:00 0 
+7f9f50000000-7f9f5160e000 rw-p 00000000 00:00 0 
+7f9f5160e000-7f9f54000000 ---p 00000000 00:00 0 
+7f9f54000000-7f9f54306000 rw-p 00000000 00:00 0 
+7f9f54306000-7f9f58000000 ---p 00000000 00:00 0 
+7f9f58000000-7f9f58043000 rw-p 00000000 00:00 0 
+7f9f58043000-7f9f5c000000 ---p 00000000 00:00 0 
+7f9f5c000000-7f9f5c021000 rw-p 00000000 00:00 0 
+7f9f5c021000-7f9f60000000 ---p 00000000 00:00 0 
+7f9f60000000-7f9f60cb6000 rw-p 00000000 00:00 0 
+7f9f60cb6000-7f9f64000000 ---p 00000000 00:00 0 
+7f9f64000000-7f9f64021000 rw-p 00000000 00:00 0 
+7f9f64021000-7f9f68000000 ---p 00000000 00:00 0 
+7f9f68000000-7f9f68021000 rw-p 00000000 00:00 0 
+7f9f68021000-7f9f6c000000 ---p 00000000 00:00 0 
+7f9f6c000000-7f9f6c021000 rw-p 00000000 00:00 0 
+7f9f6c021000-7f9f70000000 ---p 00000000 00:00 0 
+7f9f70000000-7f9f70021000 rw-p 00000000 00:00 0 
+7f9f70021000-7f9f74000000 ---p 00000000 00:00 0 
+7f9f74000000-7f9f75681000 rw-p 00000000 00:00 0 
+7f9f75681000-7f9f78000000 ---p 00000000 00:00 0 
+7f9f78000000-7f9f78021000 rw-p 00000000 00:00 0 
+7f9f78021000-7f9f7c000000 ---p 00000000 00:00 0 
+7f9f7c000000-7f9f7c021000 rw-p 00000000 00:00 0 
+7f9f7c021000-7f9f80000000 ---p 00000000 00:00 0 
+7f9f80000000-7f9f802b7000 rw-p 00000000 00:00 0 
+7f9f802b7000-7f9f84000000 ---p 00000000 00:00 0 
+7f9f84600000-7f9f84603000 ---p 00000000 00:00 0 
+7f9f84603000-7f9f847c0000 rw-p 00000000 00:00 0 
+7f9f847c0000-7f9f84900000 ---p 00000000 00:00 0 
+7f9f84900000-7f9f84b00000 rw-p 00000000 00:00 0 
+7f9f84b00000-7f9f84b03000 ---p 00000000 00:00 0 
+7f9f84b03000-7f9f84e00000 rw-p 00000000 00:00 0 
+7f9f84e00000-7f9f84e11000 r-xp 00000000 00:281b 399                      /tmp/libnetty_transport_native_epoll_x86_645888022370460864637.so (deleted)
+7f9f84e11000-7f9f85010000 ---p 00011000 00:281b 399                      /tmp/libnetty_transport_native_epoll_x86_645888022370460864637.so (deleted)
+7f9f85010000-7f9f85013000 r--p 00010000 00:281b 399                      /tmp/libnetty_transport_native_epoll_x86_645888022370460864637.so (deleted)
+7f9f85013000-7f9f85014000 rw-p 00000000 00:00 0 
+7f9f85100000-7f9f85103000 ---p 00000000 00:00 0 
+7f9f85103000-7f9f853c0000 rw-p 00000000 00:00 0 
+7f9f853c0000-7f9f855c0000 rw-p 00000000 00:00 0 
+7f9f855c0000-7f9f857c0000 rw-p 00000000 00:00 0 
+7f9f857c0000-7f9f85a00000 rw-p 00000000 00:00 0 
+7f9f85a00000-7f9f85a03000 r-xp 00000000 00:281b 392                      /tmp/jansi-2.3.2-6df765d773fdfe12-libjansi.so
+7f9f85a03000-7f9f85c02000 ---p 00003000 00:281b 392                      /tmp/jansi-2.3.2-6df765d773fdfe12-libjansi.so
+7f9f85c02000-7f9f85c03000 rw-p 00002000 00:281b 392                      /tmp/jansi-2.3.2-6df765d773fdfe12-libjansi.so
+7f9f85c9b000-7f9f85c9e000 ---p 00000000 00:00 0 
+7f9f85c9e000-7f9f85f5b000 rw-p 00000000 00:00 0 
+7f9f85f5b000-7f9f8619b000 rw-p 00000000 00:00 0 
+7f9f8619b000-7f9f8619e000 ---p 00000000 00:00 0 
+7f9f8619e000-7f9f8629b000 rw-p 00000000 00:00 0 
+7f9f8629b000-7f9f86414000 r--s 0170b000 00:296 495                       /home/runner/eagler-craft/server/cache/patched_1.8.8.jar
+7f9f86415000-7f9f86418000 ---p 00000000 00:00 0 
+7f9f86418000-7f9f866d5000 rw-p 00000000 00:00 0 
+7f9f866d5000-7f9f868f3000 rw-p 00000000 00:00 0 
+7f9f868f3000-7f9f86ad5000 rw-p 00000000 00:00 0 
+7f9f86ad5000-7f9f86d15000 rw-p 00000000 00:00 0 
+7f9f86d15000-7f9f86d18000 ---p 00000000 00:00 0 
+7f9f86d18000-7f9f86e15000 rw-p 00000000 00:00 0 
+7f9f86e15000-7f9f86e18000 ---p 00000000 00:00 0 
+7f9f86e18000-7f9f870d5000 rw-p 00000000 00:00 0 
+7f9f870d5000-7f9f87315000 rw-p 00000000 00:00 0 
+7f9f87315000-7f9f87318000 ---p 00000000 00:00 0 
+7f9f87318000-7f9f87415000 rw-p 00000000 00:00 0 
+7f9f87415000-7f9f87416000 ---p 00000000 00:00 0 
+7f9f87416000-7f9f87516000 rw-p 00000000 00:00 0 
+7f9f87516000-7f9f87519000 ---p 00000000 00:00 0 
+7f9f87519000-7f9f87616000 rw-p 00000000 00:00 0 
+7f9f87616000-7f9f87617000 ---p 00000000 00:00 0 
+7f9f87617000-7f9f8761a000 ---p 00000000 00:00 0 
+7f9f8761a000-7f9f87717000 rw-p 00000000 00:00 0 
+7f9f87717000-7f9f87718000 ---p 00000000 00:00 0 
+7f9f87718000-7f9f8771b000 ---p 00000000 00:00 0 
+7f9f8771b000-7f9f87818000 rw-p 00000000 00:00 0 
+7f9f87818000-7f9f8781b000 ---p 00000000 00:00 0 
+7f9f8781b000-7f9f87918000 rw-p 00000000 00:00 0 
+7f9f87918000-7f9f87bfe000 r--p 00000000 00:2828 28444448                 /usr/lib/locale/locale-archive
+7f9f87bfe000-7f9f87c01000 ---p 00000000 00:00 0 
+7f9f87c01000-7f9f87cfe000 rw-p 00000000 00:00 0 
+7f9f87cfe000-7f9f87d01000 ---p 00000000 00:00 0 
+7f9f87d01000-7f9f87dfe000 rw-p 00000000 00:00 0 
+7f9f87dfe000-7f9f87dff000 ---p 00000000 00:00 0 
+7f9f87dff000-7f9f88000000 rw-p 00000000 00:00 0 
+7f9f88000000-7f9f88021000 rw-p 00000000 00:00 0 
+7f9f88021000-7f9f8c000000 ---p 00000000 00:00 0 
+7f9f8c000000-7f9f8c021000 rw-p 00000000 00:00 0 
+7f9f8c021000-7f9f90000000 ---p 00000000 00:00 0 
+7f9f90000000-7f9f90021000 rw-p 00000000 00:00 0 
+7f9f90021000-7f9f94000000 ---p 00000000 00:00 0 
+7f9f9405a000-7f9f94060000 r--s 0003d000 00:388 679350551                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/ext/sunjce_provider.jar
+7f9f94060000-7f9f94068000 r--p 00000000 00:388 679348643                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libsunec.so
+7f9f94068000-7f9f94080000 r-xp 00008000 00:388 679348643                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libsunec.so
+7f9f94080000-7f9f9408a000 r--p 00020000 00:388 679348643                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libsunec.so
+7f9f9408a000-7f9f9408e000 r--p 00029000 00:388 679348643                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libsunec.so
+7f9f9408e000-7f9f9408f000 rw-p 0002d000 00:388 679348643                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libsunec.so
+7f9f9408f000-7f9f94090000 rw-p 00034000 00:388 679348643                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libsunec.so
+7f9f94090000-7f9f94092000 rw-p 00035000 00:388 679348643                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libsunec.so
+7f9f94092000-7f9f940ad000 r--s 00394000 00:388 679349856                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/ext/cldrdata.jar
+7f9f940ad000-7f9f940c0000 r--s 0007d000 00:296 468                       /home/runner/eagler-craft/server/plugins/ProtocolSupport-1.8.jar
+7f9f940c0000-7f9f940c3000 ---p 00000000 00:00 0 
+7f9f940c3000-7f9f95000000 rw-p 00000000 00:00 0 
+7f9f95000000-7f9f95e90000 rwxp 00000000 00:00 0 
+7f9f95e90000-7f9fa4000000 ---p 00000000 00:00 0 
+7f9fa4000000-7f9fa4767000 rw-p 00000000 00:00 0 
+7f9fa4767000-7f9fa8000000 ---p 00000000 00:00 0 
+7f9fa8000000-7f9fa8002000 r--s 00008000 00:388 679350550                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/ext/sunec.jar
+7f9fa8002000-7f9fa8006000 r--s 00041000 00:388 679350552                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/ext/sunpkcs11.jar
+7f9fa8006000-7f9fa8010000 r--s 00117000 00:388 679350278                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/ext/localedata.jar
+7f9fa8010000-7f9fa8012000 r--s 00016000 00:388 679350572                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/jce.jar
+7f9fa8012000-7f9fa8024000 r--s 0034c000 00:388 679350592                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/resources.jar
+7f9fa8024000-7f9fa803f000 r--s 001d6000 00:388 679350318                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/ext/nashorn.jar
+7f9fa803f000-7f9fa8043000 r--p 00000000 00:388 679348496                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libmanagement.so
+7f9fa8043000-7f9fa8046000 r-xp 00004000 00:388 679348496                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libmanagement.so
+7f9fa8046000-7f9fa8048000 r--p 00007000 00:388 679348496                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libmanagement.so
+7f9fa8048000-7f9fa8049000 r--p 00008000 00:388 679348496                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libmanagement.so
+7f9fa8049000-7f9fa804a000 rw-p 00009000 00:388 679348496                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libmanagement.so
+7f9fa804a000-7f9fa804d000 rw-p 0000d000 00:388 679348496                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libmanagement.so
+7f9fa804d000-7f9fa8050000 rw-p 00010000 00:388 679348496                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libmanagement.so
+7f9fa8050000-7f9fa8061000 r--s 001c5000 00:388 679350578                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/jsse.jar
+7f9fa8061000-7f9fa8066000 r--p 00000000 00:388 679348599                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnet.so
+7f9fa8066000-7f9fa8077000 r-xp 00005000 00:388 679348599                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnet.so
+7f9fa8077000-7f9fa807b000 r--p 00016000 00:388 679348599                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnet.so
+7f9fa807b000-7f9fa807c000 r--p 00019000 00:388 679348599                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnet.so
+7f9fa807c000-7f9fa807d000 rw-p 0001a000 00:388 679348599                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnet.so
+7f9fa807d000-7f9fa8080000 rw-p 00020000 00:388 679348599                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnet.so
+7f9fa8080000-7f9fa8083000 rw-p 00023000 00:388 679348599                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnet.so
+7f9fa8083000-7f9fa808a000 r--p 00000000 00:388 679348603                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnio.so
+7f9fa808a000-7f9fa8092000 r-xp 00007000 00:388 679348603                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnio.so
+7f9fa8092000-7f9fa8095000 r--p 0000f000 00:388 679348603                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnio.so
+7f9fa8095000-7f9fa8096000 r--p 00012000 00:388 679348603                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnio.so
+7f9fa8096000-7f9fa8097000 rw-p 00013000 00:388 679348603                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnio.so
+7f9fa8097000-7f9fa809b000 rw-p 00019000 00:388 679348603                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnio.so
+7f9fa809b000-7f9fa809f000 rw-p 0001d000 00:388 679348603                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libnio.so
+7f9fa809f000-7f9fa80aa000 r--s 01699000 00:296 494                       /home/runner/eagler-craft/server/server.jar
+7f9fa80aa000-7f9fa80b0000 r--s 000d3000 00:388 679350577                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/jfr.jar
+7f9fa80b0000-7f9fa8502000 rw-p 00000000 00:00 0 
+7f9fa8502000-7f9fa86d3000 r--s 03cb6000 00:388 679350593                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/rt.jar
+7f9fa86d3000-7f9fa98ae000 rw-p 00000000 00:00 0 
+7f9fa98ae000-7f9fa98af000 ---p 00000000 00:00 0 
+7f9fa98af000-7f9fa99af000 rw-p 00000000 00:00 0 
+7f9fa99af000-7f9fa99b0000 ---p 00000000 00:00 0 
+7f9fa99b0000-7f9fa9ab0000 rw-p 00000000 00:00 0 
+7f9fa9ab0000-7f9fa9ab1000 ---p 00000000 00:00 0 
+7f9fa9ab1000-7f9fa9c19000 rw-p 00000000 00:00 0 
+7f9fa9c19000-7f9fa9cc4000 rw-p 00000000 00:00 0 
+7f9fa9cc4000-7f9fa9d24000 rw-p 00000000 00:00 0 
+7f9fa9d24000-7f9fa9d5c000 ---p 00000000 00:00 0 
+7f9fa9d5c000-7f9fa9d98000 rw-p 00000000 00:00 0 
+7f9fa9d98000-7f9faa11d000 ---p 00000000 00:00 0 
+7f9faa11d000-7f9faa120000 r--p 00000000 00:388 679348703                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libzip.so
+7f9faa120000-7f9faa124000 r-xp 00003000 00:388 679348703                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libzip.so
+7f9faa124000-7f9faa126000 r--p 00007000 00:388 679348703                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libzip.so
+7f9faa126000-7f9faa127000 r--p 00008000 00:388 679348703                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libzip.so
+7f9faa127000-7f9faa128000 rw-p 00009000 00:388 679348703                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libzip.so
+7f9faa128000-7f9faa12a000 rw-p 0000c000 00:388 679348703                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libzip.so
+7f9faa12a000-7f9faa12c000 rw-p 0000e000 00:388 679348703                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libzip.so
+7f9faa12c000-7f9faa134000 rw-s 00000000 00:281b 385                      /tmp/hsperfdata_runner/52
+7f9faa134000-7f9faa135000 rw-p 00000000 00:00 0 
+7f9faa135000-7f9faa136000 ---p 00000000 00:00 0 
+7f9faa136000-7f9faa143000 r--p 00000000 00:388 679348417                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libjava.so
+7f9faa143000-7f9faa158000 r-xp 0000d000 00:388 679348417                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libjava.so
+7f9faa158000-7f9faa15f000 r--p 00022000 00:388 679348417                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libjava.so
+7f9faa15f000-7f9faa160000 r--p 00028000 00:388 679348417                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libjava.so
+7f9faa160000-7f9faa161000 rw-p 00029000 00:388 679348417                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libjava.so
+7f9faa161000-7f9faa162000 rw-p 00000000 00:00 0 
+7f9faa162000-7f9faa168000 rw-p 00033000 00:388 679348417                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libjava.so
+7f9faa168000-7f9faa16d000 rw-p 00039000 00:388 679348417                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libjava.so
+7f9faa16d000-7f9faa172000 r--p 00000000 00:388 679348699                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libverify.so
+7f9faa172000-7f9faa179000 r-xp 00005000 00:388 679348699                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libverify.so
+7f9faa179000-7f9faa17b000 r--p 0000c000 00:388 679348699                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libverify.so
+7f9faa17b000-7f9faa17d000 r--p 0000d000 00:388 679348699                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libverify.so
+7f9faa17d000-7f9faa17e000 rw-p 0000f000 00:388 679348699                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libverify.so
+7f9faa17e000-7f9faa180000 rw-p 00011000 00:388 679348699                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libverify.so
+7f9faa180000-7f9faa182000 rw-p 00013000 00:388 679348699                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/libverify.so
+7f9faa182000-7f9faa183000 ---p 00000000 00:00 0 
+7f9faa183000-7f9faa186000 ---p 00000000 00:00 0 
+7f9faa186000-7f9faa283000 rw-p 00000000 00:00 0 
+7f9faa283000-7f9faa286000 r--p 00000000 00:388 677527628                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libgcc_s.so.1
+7f9faa286000-7f9faa298000 r-xp 00003000 00:388 677527628                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libgcc_s.so.1
+7f9faa298000-7f9faa29b000 r--p 00015000 00:388 677527628                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libgcc_s.so.1
+7f9faa29b000-7f9faa29c000 r--p 00018000 00:388 677527628                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libgcc_s.so.1
+7f9faa29c000-7f9faa29d000 rw-p 00019000 00:388 677527628                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libgcc_s.so.1
+7f9faa29d000-7f9faa33e000 r--p 00000000 00:388 677527653                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libstdc++.so.6.0.29
+7f9faa33e000-7f9faa436000 r-xp 000a1000 00:388 677527653                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libstdc++.so.6.0.29
+7f9faa436000-7f9faa4a2000 r--p 00199000 00:388 677527653                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libstdc++.so.6.0.29
+7f9faa4a2000-7f9faa4af000 r--p 00205000 00:388 677527653                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libstdc++.so.6.0.29
+7f9faa4af000-7f9faa4b0000 rw-p 00212000 00:388 677527653                 /nix/store/mdck89nsfisflwjv6xv8ydj7dj0sj2pn-gcc-11.3.0-lib/lib/libstdc++.so.6.0.29
+7f9faa4b0000-7f9faa4b3000 rw-p 00000000 00:00 0 
+7f9faa4b3000-7f9faa6a8000 r--p 00000000 00:388 679348714                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so
+7f9faa6a8000-7f9faafca000 r-xp 001f5000 00:388 679348714                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so
+7f9faafca000-7f9fab176000 r--p 00b17000 00:388 679348714                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so
+7f9fab176000-7f9fab20c000 r--p 00cc3000 00:388 679348714                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so
+7f9fab20c000-7f9fab235000 rw-p 00d59000 00:388 679348714                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so
+7f9fab235000-7f9fab268000 rw-p 00000000 00:00 0 
+7f9fab268000-7f9fab26d000 rw-p 0100e000 00:388 679348714                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so
+7f9fab26d000-7f9fab270000 rw-p 01013000 00:388 679348714                 /nix/store/arja5b2nhs4z9ajrcx4wiipjywcw1ip6-openjdk-8u322-ga-jre/lib/openjdk/jre/lib/amd64/server/libjvm.so
+7f9fab270000-7f9fab279000 rw-p 00000000 00:00 0 
+7f9fab279000-7f9fab27c000 r--p 00000000 00:388 678697023                 /nix/store/jijvvmbza698qa6yjgr1ndgdgyryvq1i-libcap-2.66-lib/lib/libcap.so.2.66
+7f9fab27c000-7f9fab281000 r-xp 00003000 00:388 678697023                 /nix/store/jijvvmbza698qa6yjgr1ndgdgyryvq1i-libcap-2.66-lib/lib/libcap.so.2.66
+7f9fab281000-7f9fab283000 r--p 00008000 00:388 678697023                 /nix/store/jijvvmbza698qa6yjgr1ndgdgyryvq1i-libcap-2.66-lib/lib/libcap.so.2.66
+7f9fab283000-7f9fab284000 r--p 0000a000 00:388 678697023                 /nix/store/jijvvmbza698qa6yjgr1ndgdgyryvq1i-libcap-2.66-lib/lib/libcap.so.2.66
+7f9fab284000-7f9fab285000 rw-p 0000b000 00:388 678697023                 /nix/store/jijvvmbza698qa6yjgr1ndgdgyryvq1i-libcap-2.66-lib/lib/libcap.so.2.66
+7f9fab285000-7f9fab287000 r--p 00000000 00:388 678710038                 /nix/store/2rs0zshg1zhczv96rhhg3br9kypdf2bz-libdatrie-2019-12-20-lib/lib/libdatrie.so.1.3.5
+7f9fab287000-7f9fab28b000 r-xp 00002000 00:388 678710038                 /nix/store/2rs0zshg1zhczv96rhhg3br9kypdf2bz-libdatrie-2019-12-20-lib/lib/libdatrie.so.1.3.5
+7f9fab28b000-7f9fab28d000 r--p 00006000 00:388 678710038                 /nix/store/2rs0zshg1zhczv96rhhg3br9kypdf2bz-libdatrie-2019-12-20-lib/lib/libdatrie.so.1.3.5
+7f9fab28d000-7f9fab28e000 r--p 00007000 00:388 678710038                 /nix/store/2rs0zshg1zhczv96rhhg3br9kypdf2bz-libdatrie-2019-12-20-lib/lib/libdatrie.so.1.3.5
+7f9fab28e000-7f9fab28f000 rw-p 00008000 00:388 678710038                 /nix/store/2rs0zshg1zhczv96rhhg3br9kypdf2bz-libdatrie-2019-12-20-lib/lib/libdatrie.so.1.3.5
+7f9fab28f000-7f9fab291000 rw-p 00000000 00:00 0 
+7f9fab291000-7f9fab294000 r--p 00000000 00:388 734287209                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLX.so.0.0.0
+7f9fab294000-7f9fab2af000 r-xp 00003000 00:388 734287209                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLX.so.0.0.0
+7f9fab2af000-7f9fab2b2000 r--p 0001e000 00:388 734287209                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLX.so.0.0.0
+7f9fab2b2000-7f9fab2b3000 ---p 00021000 00:388 734287209                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLX.so.0.0.0
+7f9fab2b3000-7f9fab2b4000 r--p 00021000 00:388 734287209                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLX.so.0.0.0
+7f9fab2b4000-7f9fab2b5000 rw-p 00022000 00:388 734287209                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLX.so.0.0.0
+7f9fab2b5000-7f9fab2c5000 rw-p 00000000 00:00 0 
+7f9fab2c5000-7f9fab2c6000 rw-p 00057000 00:388 734287209                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLX.so.0.0.0
+7f9fab2c6000-7f9fab307000 r--p 00000000 00:388 734287213                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLdispatch.so.0.0.0
+7f9fab307000-7f9fab346000 r-xp 00041000 00:388 734287213                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLdispatch.so.0.0.0
+7f9fab346000-7f9fab359000 r--p 00080000 00:388 734287213                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLdispatch.so.0.0.0
+7f9fab359000-7f9fab35a000 ---p 00093000 00:388 734287213                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLdispatch.so.0.0.0
+7f9fab35a000-7f9fab376000 r--p 00093000 00:388 734287213                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLdispatch.so.0.0.0
+7f9fab376000-7f9fab377000 rw-p 000af000 00:388 734287213                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGLdispatch.so.0.0.0
+7f9fab377000-7f9fab37f000 rw-p 00000000 00:00 0 
+7f9fab37f000-7f9fab381000 r--p 00000000 00:388 678696974                 /nix/store/09gxmx43bc0snqc2hf094hnxpx2bb4hh-libXdmcp-1.1.3/lib/libXdmcp.so.6.0.0
+7f9fab381000-7f9fab383000 r-xp 00002000 00:388 678696974                 /nix/store/09gxmx43bc0snqc2hf094hnxpx2bb4hh-libXdmcp-1.1.3/lib/libXdmcp.so.6.0.0
+7f9fab383000-7f9fab385000 r--p 00004000 00:388 678696974                 /nix/store/09gxmx43bc0snqc2hf094hnxpx2bb4hh-libXdmcp-1.1.3/lib/libXdmcp.so.6.0.0
+7f9fab385000-7f9fab386000 r--p 00005000 00:388 678696974                 /nix/store/09gxmx43bc0snqc2hf094hnxpx2bb4hh-libXdmcp-1.1.3/lib/libXdmcp.so.6.0.0
+7f9fab386000-7f9fab387000 rw-p 00006000 00:388 678696974                 /nix/store/09gxmx43bc0snqc2hf094hnxpx2bb4hh-libXdmcp-1.1.3/lib/libXdmcp.so.6.0.0
+7f9fab387000-7f9fab388000 r--p 00000000 00:388 678696911                 /nix/store/8ypkjcki98cwblzc4k0kblxz2zpjqj45-libXau-1.0.9/lib/libXau.so.6.0.0
+7f9fab388000-7f9fab389000 r-xp 00001000 00:388 678696911                 /nix/store/8ypkjcki98cwblzc4k0kblxz2zpjqj45-libXau-1.0.9/lib/libXau.so.6.0.0
+7f9fab389000-7f9fab38a000 r--p 00002000 00:388 678696911                 /nix/store/8ypkjcki98cwblzc4k0kblxz2zpjqj45-libXau-1.0.9/lib/libXau.so.6.0.0
+7f9fab38a000-7f9fab38b000 r--p 00002000 00:388 678696911                 /nix/store/8ypkjcki98cwblzc4k0kblxz2zpjqj45-libXau-1.0.9/lib/libXau.so.6.0.0
+7f9fab38b000-7f9fab38c000 rw-p 00003000 00:388 678696911                 /nix/store/8ypkjcki98cwblzc4k0kblxz2zpjqj45-libXau-1.0.9/lib/libXau.so.6.0.0
+7f9fab38c000-7f9fab38e000 rw-p 00000000 00:00 0 
+7f9fab38e000-7f9fab3a5000 r--p 00000000 00:388 679094737                 /nix/store/adnxnv29s3nnrxrv19z5jnqzww0jd1aa-systemd-minimal-251.7/lib/libsystemd.so.0.34.0
+7f9fab3a5000-7f9fab431000 r-xp 00017000 00:388 679094737                 /nix/store/adnxnv29s3nnrxrv19z5jnqzww0jd1aa-systemd-minimal-251.7/lib/libsystemd.so.0.34.0
+7f9fab431000-7f9fab46c000 r--p 000a3000 00:388 679094737                 /nix/store/adnxnv29s3nnrxrv19z5jnqzww0jd1aa-systemd-minimal-251.7/lib/libsystemd.so.0.34.0
+7f9fab46c000-7f9fab478000 r--p 000de000 00:388 679094737                 /nix/store/adnxnv29s3nnrxrv19z5jnqzww0jd1aa-systemd-minimal-251.7/lib/libsystemd.so.0.34.0
+7f9fab478000-7f9fab479000 rw-p 000ea000 00:388 679094737                 /nix/store/adnxnv29s3nnrxrv19z5jnqzww0jd1aa-systemd-minimal-251.7/lib/libsystemd.so.0.34.0
+7f9fab479000-7f9fab47a000 rw-p 00000000 00:00 0 
+7f9fab47a000-7f9fab47c000 r--p 00000000 00:388 678708656                 /nix/store/1dgws25664p544znpc6f1nh9xmjf4ykc-pcre-8.45/lib/libpcre.so.1.2.13
+7f9fab47c000-7f9fab4d3000 r-xp 00002000 00:388 678708656                 /nix/store/1dgws25664p544znpc6f1nh9xmjf4ykc-pcre-8.45/lib/libpcre.so.1.2.13
+7f9fab4d3000-7f9fab4f0000 r--p 00059000 00:388 678708656                 /nix/store/1dgws25664p544znpc6f1nh9xmjf4ykc-pcre-8.45/lib/libpcre.so.1.2.13
+7f9fab4f0000-7f9fab4f1000 r--p 00075000 00:388 678708656                 /nix/store/1dgws25664p544znpc6f1nh9xmjf4ykc-pcre-8.45/lib/libpcre.so.1.2.13
+7f9fab4f1000-7f9fab4f2000 rw-p 00076000 00:388 678708656                 /nix/store/1dgws25664p544znpc6f1nh9xmjf4ykc-pcre-8.45/lib/libpcre.so.1.2.13
+7f9fab4f2000-7f9fab4fc000 r--p 00000000 00:388 678714828                 /nix/store/acvafmp652dj67f4g3sdx68n2mg1afz4-util-linux-minimal-2.38.1-lib/lib/libblkid.so.1.1.0
+7f9fab4fc000-7f9fab532000 r-xp 0000a000 00:388 678714828                 /nix/store/acvafmp652dj67f4g3sdx68n2mg1afz4-util-linux-minimal-2.38.1-lib/lib/libblkid.so.1.1.0
+7f9fab532000-7f9fab543000 r--p 00040000 00:388 678714828                 /nix/store/acvafmp652dj67f4g3sdx68n2mg1afz4-util-linux-minimal-2.38.1-lib/lib/libblkid.so.1.1.0
+7f9fab543000-7f9fab549000 r--p 00051000 00:388 678714828                 /nix/store/acvafmp652dj67f4g3sdx68n2mg1afz4-util-linux-minimal-2.38.1-lib/lib/libblkid.so.1.1.0
+7f9fab549000-7f9fab54a000 rw-p 00057000 00:388 678714828                 /nix/store/acvafmp652dj67f4g3sdx68n2mg1afz4-util-linux-minimal-2.38.1-lib/lib/libblkid.so.1.1.0
+7f9fab54a000-7f9fab54d000 r--p 00000000 00:388 678696651                 /nix/store/ppipcv58wj9xp7impnqblrhz5j9q1gdg-graphite2-1.3.14/lib/libgraphite2.so.3.2.1
+7f9fab54d000-7f9fab56a000 r-xp 00003000 00:388 678696651                 /nix/store/ppipcv58wj9xp7impnqblrhz5j9q1gdg-graphite2-1.3.14/lib/libgraphite2.so.3.2.1
+7f9fab56a000-7f9fab56f000 r--p 00020000 00:388 678696651                 /nix/store/ppipcv58wj9xp7impnqblrhz5j9q1gdg-graphite2-1.3.14/lib/libgraphite2.so.3.2.1
+7f9fab56f000-7f9fab571000 r--p 00024000 00:388 678696651                 /nix/store/ppipcv58wj9xp7impnqblrhz5j9q1gdg-graphite2-1.3.14/lib/libgraphite2.so.3.2.1
+7f9fab571000-7f9fab572000 rw-p 00026000 00:388 678696651                 /nix/store/ppipcv58wj9xp7impnqblrhz5j9q1gdg-graphite2-1.3.14/lib/libgraphite2.so.3.2.1
+7f9fab572000-7f9fab574000 rw-p 00000000 00:00 0 
+7f9fab574000-7f9fab577000 r--p 00000000 00:388 678710861                 /nix/store/cjdm2inq3madwqpnnddi59vv5yd89m52-pcre2-10.40/lib/libpcre2-8.so.0.11.0
+7f9fab577000-7f9fab5e5000 r-xp 00003000 00:388 678710861                 /nix/store/cjdm2inq3madwqpnnddi59vv5yd89m52-pcre2-10.40/lib/libpcre2-8.so.0.11.0
+7f9fab5e5000-7f9fab610000 r--p 00071000 00:388 678710861                 /nix/store/cjdm2inq3madwqpnnddi59vv5yd89m52-pcre2-10.40/lib/libpcre2-8.so.0.11.0
+7f9fab610000-7f9fab611000 r--p 0009c000 00:388 678710861                 /nix/store/cjdm2inq3madwqpnnddi59vv5yd89m52-pcre2-10.40/lib/libpcre2-8.so.0.11.0
+7f9fab611000-7f9fab612000 rw-p 0009d000 00:388 678710861                 /nix/store/cjdm2inq3madwqpnnddi59vv5yd89m52-pcre2-10.40/lib/libpcre2-8.so.0.11.0
+7f9fab612000-7f9fab614000 r--p 00000000 00:388 678697588                 /nix/store/xghl0l2f6byzqvy06ana2y4isqwa7blw-libffi-3.4.4/lib/libffi.so.8.1.2
+7f9fab614000-7f9fab61b000 r-xp 00002000 00:388 678697588                 /nix/store/xghl0l2f6byzqvy06ana2y4isqwa7blw-libffi-3.4.4/lib/libffi.so.8.1.2
+7f9fab61b000-7f9fab61d000 r--p 00009000 00:388 678697588                 /nix/store/xghl0l2f6byzqvy06ana2y4isqwa7blw-libffi-3.4.4/lib/libffi.so.8.1.2
+7f9fab61d000-7f9fab61e000 r--p 0000a000 00:388 678697588                 /nix/store/xghl0l2f6byzqvy06ana2y4isqwa7blw-libffi-3.4.4/lib/libffi.so.8.1.2
+7f9fab61e000-7f9fab61f000 rw-p 0000b000 00:388 678697588                 /nix/store/xghl0l2f6byzqvy06ana2y4isqwa7blw-libffi-3.4.4/lib/libffi.so.8.1.2
+7f9fab61f000-7f9fab622000 r--p 00000000 00:388 678712951                 /nix/store/j49aryma2g2np2ycs9hplx4w8xmvwxnf-libthai-0.1.29/lib/libthai.so.0.3.1
+7f9fab622000-7f9fab626000 r-xp 00003000 00:388 678712951                 /nix/store/j49aryma2g2np2ycs9hplx4w8xmvwxnf-libthai-0.1.29/lib/libthai.so.0.3.1
+7f9fab626000-7f9fab629000 r--p 00007000 00:388 678712951                 /nix/store/j49aryma2g2np2ycs9hplx4w8xmvwxnf-libthai-0.1.29/lib/libthai.so.0.3.1
+7f9fab629000-7f9fab62a000 r--p 00009000 00:388 678712951                 /nix/store/j49aryma2g2np2ycs9hplx4w8xmvwxnf-libthai-0.1.29/lib/libthai.so.0.3.1
+7f9fab62a000-7f9fab62b000 rw-p 0000a000 00:388 678712951                 /nix/store/j49aryma2g2np2ycs9hplx4w8xmvwxnf-libthai-0.1.29/lib/libthai.so.0.3.1
+7f9fab62b000-7f9fab62d000 r--p 00000000 00:388 677023121                 /nix/store/qx1955hp5ghvp6j3g4vxyli87wbmc35w-fribidi-1.0.12/lib/libfribidi.so.0.4.0
+7f9fab62d000-7f9fab632000 r-xp 00002000 00:388 677023121                 /nix/store/qx1955hp5ghvp6j3g4vxyli87wbmc35w-fribidi-1.0.12/lib/libfribidi.so.0.4.0
+7f9fab632000-7f9fab649000 r--p 00007000 00:388 677023121                 /nix/store/qx1955hp5ghvp6j3g4vxyli87wbmc35w-fribidi-1.0.12/lib/libfribidi.so.0.4.0
+7f9fab649000-7f9fab64a000 r--p 0001d000 00:388 677023121                 /nix/store/qx1955hp5ghvp6j3g4vxyli87wbmc35w-fribidi-1.0.12/lib/libfribidi.so.0.4.0
+7f9fab64a000-7f9fab64b000 rw-p 0001e000 00:388 677023121                 /nix/store/qx1955hp5ghvp6j3g4vxyli87wbmc35w-fribidi-1.0.12/lib/libfribidi.so.0.4.0
+7f9fab64b000-7f9fab64d000 rw-p 00000000 00:00 0 
+7f9fab64d000-7f9fab652000 r--p 00000000 00:388 678697932                 /nix/store/ip2qihjd99hcdnr1vpp53dxz5dfsl5fd-libjpeg-turbo-2.1.4/lib/libjpeg.so.62.3.0
+7f9fab652000-7f9fab6b7000 r-xp 00005000 00:388 678697932                 /nix/store/ip2qihjd99hcdnr1vpp53dxz5dfsl5fd-libjpeg-turbo-2.1.4/lib/libjpeg.so.62.3.0
+7f9fab6b7000-7f9fab6fa000 r--p 0006a000 00:388 678697932                 /nix/store/ip2qihjd99hcdnr1vpp53dxz5dfsl5fd-libjpeg-turbo-2.1.4/lib/libjpeg.so.62.3.0
+7f9fab6fa000-7f9fab6fb000 r--p 000ac000 00:388 678697932                 /nix/store/ip2qihjd99hcdnr1vpp53dxz5dfsl5fd-libjpeg-turbo-2.1.4/lib/libjpeg.so.62.3.0
+7f9fab6fb000-7f9fab6fc000 rw-p 000ad000 00:388 678697932                 /nix/store/ip2qihjd99hcdnr1vpp53dxz5dfsl5fd-libjpeg-turbo-2.1.4/lib/libjpeg.so.62.3.0
+7f9fab6fc000-7f9fab6fd000 r--p 00000000 00:388 600592042                 /nix/store/4nlgxhb09sdr51nc9hdm8az5b08vzkgx-glibc-2.35-163/lib/librt.so.1
+7f9fab6fd000-7f9fab6fe000 r-xp 00001000 00:388 600592042                 /nix/store/4nlgxhb09sdr51nc9hdm8az5b08vzkgx-glibc-2.35-163/lib/librt.so.1
+7f9fab6fe000-7f9fab6ff000 r--p 00002000 00:388 600592042                 /nix/store/4nlgxhb09sdr51nc9hdm8az5b08vzkgx-glibc-2.35-163/lib/librt.so.1
+7f9fab6ff000-7f9fab700000 r--p 00002000 00:388 600592042                 /nix/store/4nlgxhb09sdr51nc9hdm8az5b08vzkgx-glibc-2.35-163/lib/librt.so.1
+7f9fab700000-7f9fab701000 rw-p 00003000 00:388 600592042                 /nix/store/4nlgxhb09sdr51nc9hdm8az5b08vzkgx-glibc-2.35-163/lib/librt.so.1
+7f9fab701000-7f9fab74a000 r--p 00000000 00:388 734287197                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGL.so.1.7.0
+7f9fab74a000-7f9fab76a000 r-xp 00049000 00:388 734287197                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGL.so.1.7.0
+7f9fab76a000-7f9fab77f000 r--p 00069000 00:388 734287197                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGL.so.1.7.0
+7f9fab77f000-7f9fab78d000 r--p 0007d000 00:388 734287197                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGL.so.1.7.0
+7f9fab78d000-7f9fab78e000 rw-p 0008b000 00:388 734287197                 /nix/store/hisqvx32cd57apbpcsnkpx6k3549wql1-libglvnd-1.4.0/lib/libGL.so.1.7.0
+7f9fab78e000-7f9fab78f000 rw-p 00000000 00:00 0 
+7f9fab78f000-7f9fab795000 r--p 00000000 00:388 678698995                 /nix/store/xs3v53gpwwpz34aj5h51rz4wxmjfrf08-libxcb-1.14/lib/libxcb-render.so.0.0.0
+7f9fab795000-7f9fab79a000 r-xp 00006000 00:388 678698995                 /nix/store/xs3v53gpwwpz34aj5h51rz4wxmjfrf08-libxcb-1.14/lib/lib
