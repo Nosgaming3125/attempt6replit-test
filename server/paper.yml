@@ -35,7 +35,6 @@ world-settings:
       temple: true
       village: true
       flat-bedrock: false
-    allow-block-location-tab-completion: true
     portal-search-radius: 128
     disable-thunder: false
     disable-ice-and-snow: false
@@ -44,6 +43,7 @@ world-settings:
     falling-blocks-collide-with-signs: false
     disable-mood-sounds: false
     use-async-lighting: false
+    allow-block-location-tab-completion: true
     cache-chunk-maps: false
     remove-invalid-mob-spawner-tile-entities: true
     optimize-explosions: false
@@ -55,18 +55,12 @@ world-settings:
     max-growth-height:
       cactus: 3
       reeds: 3
-    player-blocking-damage-multiplier: 0.5
-    nether-ceiling-void-damage: false
-    load-chunks:
-      enderpearls: false
-      tnt-entities: false
-      falling-blocks: false
-    fast-drain:
-      lava: false
-      water: false
-    lava-flow-speed:
-      normal: 30
-      nether: 10
+    fishing-time-range:
+      MinimumTicks: 100
+      MaximumTicks: 900
+    player-exhaustion:
+      block-break: 0.02500000037252903
+      swimming: 0.014999999664723873
     despawn-ranges:
       soft: 32
       hard: 128
@@ -81,12 +75,18 @@ world-settings:
       disable-chest-cat-detection: false
       disable-end-credits: false
     disable-teleportation-suffocation-check: false
-    fishing-time-range:
-      MinimumTicks: 100
-      MaximumTicks: 900
-    player-exhaustion:
-      block-break: 0.02500000037252903
-      swimming: 0.014999999664723873
+    player-blocking-damage-multiplier: 0.5
+    nether-ceiling-void-damage: false
+    load-chunks:
+      enderpearls: false
+      tnt-entities: false
+      falling-blocks: false
+    fast-drain:
+      lava: false
+      water: false
+    lava-flow-speed:
+      normal: 30
+      nether: 10
     disable-explosion-knockback: false
     water-over-lava-flow-speed: 5
     fix-cannons: false
